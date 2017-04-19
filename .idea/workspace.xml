@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="183ad1d4-ccaf-4100-95c7-8f69e09d0120" name="Default" comment="" />
+    <list default="true" id="183ad1d4-ccaf-4100-95c7-8f69e09d0120" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb" afterPath="$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="7" />
+              <selected id="1" />
             </state>
           </provider>
         </entry>
@@ -88,7 +90,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,6 +150,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,235 +164,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Francesca\OneDrive\CompositeTank_Docs\composite-propellant-tank\Analysis\Calculations" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/2017_02_23_back of envelope Calc.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/2017_03_19_Heat_and_Mass_Transfer_Analysis_LOX_BoilOff001.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/2017_03_19_Heat_and_Mass_Transfer_Analysis_LOX_BoilOff002.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/2017_03_19_Heat_and_Mass_Transfer_Analysis_LOX_BoilOff003.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/2017_03_19_PressureVessel_ThermalStrain1.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/2017_03_19_PressureVessel_ThermalStrain2.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/2017_03_19_Screw_Stress.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/Calculations/METLBOND Shear Stress Calculations.xlsx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Importing to Abaqus.docx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 1/Iteration1RingShrinkage.pptx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 1/Ring Iteration 1 Deformation due to Cryo Temperatures.pptx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 1/RingApproximation.cae</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 1/RingApproximation.jnl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 1/RingFirstIt1.cae</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 1/RingFirstIt1.jnl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 1/mating_ring(mks).SAT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 2/Endcap2ndITModel.cae</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 2/Endcap2ndITModel.jnl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 2/PrelimRing_Endcap.pptx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 2/RingFirstIt1.cae</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 2/RingFirstIt1.jnl</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Analysis/FEA/Iteration 2/endcap.SAT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/6_in_diameter_liner.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/6x7x.06.SLDDRW</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/6x7x.06.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/90273A015_ZINC-PLATED STL FLAT HEAD PHIL MACHINE SCREW.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/CF Inner Layer.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/CF Outer Layer.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Cryo Tank.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/End Cap.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Exploded Tank Assembly.PNG</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Full Tank Assembly.PNG</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Honeycomb Core.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Liner.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Main Ring.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Ring Seal.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/First Tank Assembly/Section of Tank Assembly.PNG</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/LV4 tank/FuelTankEndCapsV1.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/LV4 tank/FuelTankEndCapsV2.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/LV4 tank/FuelTankSideWallsV1.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/LV4 tank/FuelTankStaticPressAssem-StaticIntPressure.CWR</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/LV4 tank/FuelTankStaticPressAssem.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/endcap.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/femaleRing.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/liner.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/maleRing.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/mating_ring.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank1_2017_02_15.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank_v2/Cryo Tank.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank_v2/End Cap.SLDDRW</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank_v2/End Cap.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank_v2/Liner.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank_v2/Main Ring.SLDDRW</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank_v2/Main Ring.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/Archive/tank_v2/Ring Seal.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/90273A015_ZINC-PLATED STL FLAT HEAD PHIL MACHINE SCREW.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/CF Inner Layer.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/CF Outer Layer.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/Cryo Tank.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/End Cap.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/Honeycomb Core.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/Liner.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/Main Ring.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/current/Flat End Cap Model/Ring Seal.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Manufacturing/Oven Cure Procedure.docx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Manufacturing/manufacturing_options_endcaps(1).docx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Manufacturing/manufacturing_options_endcaps.docx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Carbon Fiber Layer/3900_Prepreg.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Carbon Fiber Layer/3900cf_safety.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Carbon Fiber Layer/81235 Cytec CYCOM 6070 Phenolic Resin.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Carbon Fiber Layer/thermal_property_of_cf_epoxy_composite.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/HoneyComb Core/BMS_8_139_hexcel_f161_data_sheet.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/HoneyComb Core/Honeycomb_Attributes_and_Properties.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Masterbond Adhesives of Interest/EP21TCHT-1.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Masterbond Adhesives of Interest/EP29LPSP.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Masterbond Adhesives of Interest/EP29LPSPAO.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Masterbond Adhesives of Interest/SUP10AOHT.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Masterbond Adhesives of Interest/SUP10HTFL.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Masterbond Adhesives of Interest/SUP12AOHT-LO.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Metlbond 1515-3M_safety.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Metlbond_1515-3_081210.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/Layer Adhesive/Viable Cryogenic Adhesives.xlsx</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Data Sheets _ Material Info/PTFE Chemical Liner/TeflonTM  PTFE 807N X granular  resin.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Photos - General/20170305_DonatedHoneyCombLabel.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Samples/2017-02-22_NXT85_1mm.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Samples/20170222_PCTFE_Sample/20170222_162044.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Samples/20170222_PCTFE_Sample/20170222_162049.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Samples/20170222_PCTFE_Sample/20170222_162055.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Samples/20170222_PCTFE_Sample/20170222_162058.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Samples/20170222_PCTFE_Sample/20170222_162109.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/Material Samples/20170222_VirginPTFE_Etched_Sample.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/safety/Chemical_Safety_Training_Notes.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/safety/safety_gram_6_OXYGEN.pdf</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/6_in_diameter_liner.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/6x7x.06.SLDDRW</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/6x7x.06.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/LV4 tank/FuelTankEndCapsV1.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/LV4 tank/FuelTankEndCapsV2.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/LV4 tank/FuelTankSideWallsV1.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/LV4 tank/FuelTankStaticPressAssem-StaticIntPressure.CWR</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/LV4 tank/FuelTankStaticPressAssem.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/endcap.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/femaleRing.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/liner.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/maleRing.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/mating_ring.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank1_2017_02_15.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank_v2/Cryo Tank.SLDASM</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank_v2/End Cap.SLDDRW</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank_v2/End Cap.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank_v2/Liner.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank_v2/Main Ring.SLDDRW</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank_v2/Main Ring.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/CAD/tank_v2/Ring Seal.SLDPRT</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/data_sheets/81235cytec CYCOM 6070 tds.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/data_sheets/BMS_8_139_hexcel_f161_data_sheet.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/data_sheets/Metlbond_1515-3_081210.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Materials/data_sheets/metlbond_1515_3M.pdf</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Weldon/Chemical_Safety_Training_Notes.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/Weldon/safety_gram_6_OXYGEN.pdf</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -494,6 +267,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -711,13 +490,13 @@
     <frame x="10" y="14" width="1595" height="860" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.247557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25081432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5022801" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18956044" sideWeight="0.49771988" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.495114" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -774,6 +553,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
     <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
@@ -787,18 +580,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/HT Scratch Code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/HT Scratch Code.py" />
     <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="7" />
+          <selected id="1" />
         </state>
       </provider>
     </entry>
