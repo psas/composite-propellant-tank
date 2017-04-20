@@ -17,3 +17,8 @@ Letters refer to various versions, such as tube liner vs sheet with seam liner
 Example: 0201-A is ring designed for sheet liner iteration 1, 0201-B is ring designed for tube liner iteration 2.
 
 A=Sheet liner, B=Tube liner
+
+
+# Summary of Iterations so far:
+
+## Tank Iteration 1:
