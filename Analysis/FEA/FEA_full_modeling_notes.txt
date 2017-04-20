@@ -46,7 +46,7 @@ In Abaqus (quick modeling ex)
 		
 	-material properties:
 		-mechanical:elasticity, poissons (type isotropic)(for linear elastic)
-		-Mechanical:plasticity(going to have to research this to determine what time of analysis to use)
+		-Mechanical:plasticity(going to have to research this to determine what type of analysis to use)
 				-Yield stress:plastic strain (from the excel sheet we generated earlier)
 		-Hardening drop down: start w/ isotropic
 
