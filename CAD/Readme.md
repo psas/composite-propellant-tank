@@ -23,8 +23,8 @@ A=Sheet liner, B=Tube liner
 
 ## Summary of Iterations so far:
 
-## Tank Iteration 1:
+- Tank Iteration 1:
 
-## Tank Iteration 2:
+- Tank Iteration 2:
 
-## Tank Iteration 3:
+- Tank Iteration 3:
