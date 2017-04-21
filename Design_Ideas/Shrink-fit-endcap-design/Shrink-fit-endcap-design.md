@@ -14,17 +14,17 @@ PTFE has a larger coefficient of thermal expansion than aluminum at all temperat
 
 Q: How to compress the PTFE and properly retain the lox seal during the chill process?
 
-*Calculate the unrestricted expansion expected in the radial direction of the inset endcaps when subjected to shrink fit - expansion (use to define PTFE overhang)
+* Calculate the unrestricted expansion expected in the radial direction of the inset endcaps when subjected to shrink fit - expansion (use to define PTFE overhang)
 
-*Calculate final diameters of PTFE and AL when both subjected to cryo-temps
+* Calculate final diameters of PTFE and AL when both subjected to cryo-temps
 
-*Devise initial test procedures.
+* Devise initial test procedures.
 
 ## Build to do:
 
-*simplified ring and endcap designs without complex geometry and screw holes.
+* simplified ring and endcap designs without complex geometry and screw holes.
 
-*cut shorter virgin PTFE tubing for testing.
+* cut shorter virgin PTFE tubing for testing.
 
 ## PTFE Properties: 
 
