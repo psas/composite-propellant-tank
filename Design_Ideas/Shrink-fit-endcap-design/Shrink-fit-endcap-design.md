@@ -20,13 +20,15 @@ subjected to shrink fit - expansion.
 
 *Calculate final diameters of PTFE and AL when both subjected to cryo-temps
 
-## build to do:
+## Build to do:
 
 -simplified ring and endcap designs without complex geometry and screw holes.
 
 -shorter virgin PTFE tubing for testing.
 
-## PTFE Properties: <img src="./media/media/image2.jpeg" alt="C:\Users\Francesca\Desktop\shrinkfit.jpg" width="624" height="831" />
+## PTFE Properties: 
+
+<img src="./media/media/image2.jpeg" alt="C:\Users\Francesca\Desktop\shrinkfit.jpg" width="624" height="831" />
 
 -Fairly uniform compressive strength across PTFE grades
 
@@ -48,7 +50,7 @@ subjected to shrink fit - expansion.
 
 <img src="./media/media/image3.png" width="344" height="263" />
 
-## Aluminum Properties
+### Aluminum Properties
 
 Mod E of AL6061 = 10000 ksi
 
