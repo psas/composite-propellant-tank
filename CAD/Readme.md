@@ -1,3 +1,5 @@
+
+## Model Naming Conventions
 Current working models should be located in the Current Folder.  Once adjustments have been made, please move previous
 models/designs into the appropriate Archive.
 
@@ -17,3 +19,12 @@ Letters refer to various versions, such as tube liner vs sheet with seam liner
 Example: 0201-A is ring designed for sheet liner iteration 1, 0201-B is ring designed for tube liner iteration 2.
 
 A=Sheet liner, B=Tube liner
+
+
+## Summary of Iterations so far:
+
+- Tank Iteration 1:
+
+- Tank Iteration 2:
+
+- Tank Iteration 3:
