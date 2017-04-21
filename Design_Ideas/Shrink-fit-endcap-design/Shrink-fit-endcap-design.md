@@ -1,4 +1,4 @@
-# Ideas surrounding a shrink-fit endcap design:*
+# Ideas surrounding a shrink-fit endcap design:
 
 ## Main arguments for:
 
