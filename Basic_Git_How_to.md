@@ -2,20 +2,20 @@
 
 Before pushing anything:
 
--git pull 
--git status
+- git pull 
+- git status
 (make sure you are up to date)
 
 
--git add -A 
+- git add -A 
 (add all local changes)
 or
--git add/rm  "specific file"
+- git add/rm  "specific file"
 
--git commit -m "write your commit message here"
+- git commit -m "write your commit message here"
 
--git push
+- git push
 (push to git, duh)
 
--git status
+- git status
 (Check you're all good)
