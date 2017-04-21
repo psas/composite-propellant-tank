@@ -1,32 +1,32 @@
-*\# Ideas surrounding a shrink-fit endcap design:*
+# Ideas surrounding a shrink-fit endcap design:*
 
-\#\# Main arguments for:
+## Main arguments for:
 
 PTFE has a larger coefficient of thermal expansion than aluminum at all temperatures. By adding an extended lip to the endcap that the PTFE can clamp down on during the cryo-fill process, a mechanical seal can be formed, isolating the LOX from the CF and adhesive. The End-cap can be shrunk with LN2 prior to insertion, allowing for a compression of the PFTE prior to fill, so a seal can be established at room temp. This solution also reduces complications related to layer separation and simplifies the layup procedure by eliminating the need to etch and adhere the PFTE to the CF structural layers (LOX sealant can be put in at this interface).
 
 <img src="./media/media/image1.jpeg" alt="C:\Users\Francesca\Desktop\shrinkfit.jpg" width="279" height="338" />
 
-\#\#\# Potential concerns:
+### Potential concerns:
 
 -Excessive PTFE contraction leading to cracking of PTFE or permanent deformation of PTFE that prevents reuse of the tank.
 
-\#\# Analysis to do:
+## Analysis to do:
 
 Q: How to compress the PTFE and properly retain the lox seal during the chill process?
 
-\*\*Calculate the unrestricted expansion expected in the radial direction of the inset endcaps when
+*Calculate the unrestricted expansion expected in the radial direction of the inset endcaps when
 
 subjected to shrink fit - expansion.
 
-\*\*Calculate final diameters of PTFE and AL when both subjected to cryo-temps
+*Calculate final diameters of PTFE and AL when both subjected to cryo-temps
 
-\#\# build to do:
+## build to do:
 
 -simplified ring and endcap designs without complex geometry and screw holes.
 
 -shorter virgin PTFE tubing for testing.
 
-\#\# PTFE Properties: <img src="./media/media/image2.jpeg" alt="C:\Users\Francesca\Desktop\shrinkfit.jpg" width="624" height="831" />
+## PTFE Properties: <img src="./media/media/image2.jpeg" alt="C:\Users\Francesca\Desktop\shrinkfit.jpg" width="624" height="831" />
 
 -Fairly uniform compressive strength across PTFE grades
 
@@ -48,7 +48,7 @@ subjected to shrink fit - expansion.
 
 <img src="./media/media/image3.png" width="344" height="263" />
 
-\#\# Aluminum Properties
+## Aluminum Properties
 
 Mod E of AL6061 = 10000 ksi
 
