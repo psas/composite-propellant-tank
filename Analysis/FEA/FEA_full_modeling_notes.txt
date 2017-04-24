@@ -43,16 +43,18 @@ In Abaqus (quick modeling ex)
 			-create datum offset from a point: Query->tools to find location of offset point on edge first, 
 				then can enter coords for Z.  This will create an offset point to be able to access the theta-R plane
 		-Select center data point to be origin, point on R plane, then offset for theta
+		-Do this in the assembly step as opposed to part geometry, as it is in the assembly step that analysis will happen 
+			(analysis will reference coords etc in the assembly step as opposed to global)
 		
 	-material properties:
 		-mechanical:elasticity, poissons (type isotropic)(for linear elastic)
-		-Mechanical:plasticity(going to have to research this to determine what time of analysis to use)
+		-Mechanical:plasticity(going to have to research this to determine what type of analysis to use)
 				-Yield stress:plastic strain (from the excel sheet we generated earlier)
 		-Hardening drop down: start w/ isotropic
 
 	-create section:shell, homogenous
 		-thickness:(actual thickness)
-	-assign sectuion
+	-assign section
 		-shell offset: middle surface
 	-assembly,instance
 		-any additional datums or work from here to under assembly dropddown

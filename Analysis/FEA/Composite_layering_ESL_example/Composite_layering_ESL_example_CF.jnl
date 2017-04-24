@@ -1,0 +1,1288 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=0.01)
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    decimalPlaces=4)
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.0004, 0.0012), 
+    point2=(0.00120000002849847, 0.0012))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.00120000002849847, 
+    0.0012), point2=(0.00120000002849847, -0.000999999965541065))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.00120000002849847, 
+    -0.000999999965541065), point2=(0.00040000000949949, 
+    -0.000999999965541065))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[3], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.00040000000949949, 
+    -0.000999999965541065), point2=(0.0004, 0.0012))
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    0.00186177622526884, 0.000271678087301552), value=0.005, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[1], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[2])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    0.000811767298728228, 0.00454955967143178), value=0.003, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[0], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[1])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    0.000348649453371763, -0.00192329054698348), value=0.003, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[2], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[3])
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Part-1', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Part-1'].BaseShell(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].ConstrainedSketch(gridSpacing=0.0002, name='__profile__', 
+    sheetSize=0.0116, transform=
+    mdb.models['Model-1'].parts['Part-1'].MakeSketchTransform(
+    sketchPlane=mdb.models['Model-1'].parts['Part-1'].faces[0], 
+    sketchPlaneSide=SIDE1, 
+    sketchUpEdge=mdb.models['Model-1'].parts['Part-1'].edges[2], 
+    sketchOrientation=RIGHT, origin=(-0.0003, 0.0015, 0.0)))
+mdb.models['Model-1'].sketches['__profile__'].sketchOptions.setValues(
+    decimalPlaces=4)
+mdb.models['Model-1'].parts['Part-1'].projectReferencesOntoSketch(filter=
+    COPLANAR_EDGES, sketch=mdb.models['Model-1'].sketches['__profile__'])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(
+    -0.00149999997150153, 0.00250000003445894), point2=(0.00150000002849847, 
+    0.00250000003445894))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.00150000002849847, 
+    0.00250000003445894), point2=(0.00150000002849847, -0.00249999996554106))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[6], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(0.00150000002849847, 
+    -0.00249999996554106), point2=(-0.00149999997150153, -0.00249999996554106))
+mdb.models['Model-1'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[7], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8])
+mdb.models['Model-1'].sketches['__profile__'].Line(point1=(
+    -0.00149999997150153, -0.00249999996554106), point2=(-0.00149999997150153, 
+    0.00250000003445894))
+mdb.models['Model-1'].sketches['__profile__'].VerticalConstraint(addUndoState=
+    False, entity=mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[8], entity2=
+    mdb.models['Model-1'].sketches['__profile__'].geometry[9])
+mdb.models['Model-1'].parts['Part-1'].SolidExtrude(depth=0.000254, 
+    flipExtrudeDirection=OFF, sketch=
+    mdb.models['Model-1'].sketches['__profile__'], sketchOrientation=RIGHT, 
+    sketchPlane=mdb.models['Model-1'].parts['Part-1'].faces[0], 
+    sketchPlaneSide=SIDE1, sketchUpEdge=
+    mdb.models['Model-1'].parts['Part-1'].edges[2])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].Material(name='CF')
+mdb.models['Model-1'].materials['CF'].Elastic(table=((70000000000.0, 
+    70000000000.0, 0.0, 0.0, 0.0, 0.0, 5000000000.0, 0.0, 0.0), ), type=
+    ENGINEERING_CONSTANTS)
+mdb.models['Model-1'].materials['CF'].elastic.FailStress(table=((600000000.0, 
+    570000000.0, 600000000.0, 570000000.0, 90000000.0, 0.0, 0.0), ))
+mdb.models['Model-1'].parts['Part-1'].CompositeLayup(description='', 
+    elementType=CONTINUUM_SHELL, name='CF layup', symmetric=False)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CF layup'].Section(
+    integrationRule=SIMPSON, poissonDefinition=DEFAULT, preIntegrate=OFF, 
+    temperature=GRADIENT, thicknessModulus=None, useDensity=OFF)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CF layup'].ReferenceOrientation(
+    additionalRotationType=ROTATION_NONE, angle=0.0, axis=AXIS_3, fieldName='', 
+    localCsys=None, orientationType=GLOBAL, stackDirection=STACK_3)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CF layup'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=0.0, plyName='Ply-1', region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1 ]', ), )), suppressed=False, thickness=0.000254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CF layup'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=0.0, plyName='Ply-2', region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1 ]', ), )), suppressed=False, thickness=0.000254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CF layup'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=0.0, plyName='Ply-3', region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1 ]', ), )), suppressed=False, thickness=0.000254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['Model-1'].parts['Part-1'].DatumCsysByThreePoints(coordSysType=
+    CARTESIAN, line1=(1.0, 0.0, 0.0), line2=(0.0, 1.0, 0.0), name=
+    'Datum csys-1', origin=mdb.models['Model-1'].parts['Part-1'].vertices[6])
+mdb.models['Model-1'].parts['Part-1'].MaterialOrientation(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, fieldName='', localCsys=
+    mdb.models['Model-1'].parts['Part-1'].datums[6], orientationType=SYSTEM, 
+    region=Region(
+    cells=mdb.models['Model-1'].parts['Part-1'].cells.getSequenceFromMask(
+    mask=('[#1 ]', ), )), stackDirection=STACK_3)
+# Save by nab2 on 2017_04_21-14.18.49; build 2016.HF5 2016_07_06-08.50.19 127027
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models.changeKey(fromName='Model-1', toName='CF 3 ply')
+mdb.models['CF 3 ply'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['CF 3 ply'].rootAssembly.Instance(dependent=OFF, name='Part-1-1', 
+    part=mdb.models['CF 3 ply'].parts['Part-1'])
+mdb.models['CF 3 ply'].rootAssembly.seedPartInstance(deviationFactor=0.1, 
+    minSizeFactor=0.1, regions=(
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'], ), size=0.00025)
+mdb.models['CF 3 ply'].rootAssembly.setMeshControls(algorithm=ADVANCING_FRONT, 
+    regions=
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    ('[#1 ]', ), ), technique=SWEEP)
+mdb.models['CF 3 ply'].rootAssembly.setSweepPath(edge=
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'].edges[8], region=
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'].cells[0], sense=
+    FORWARD)
+mdb.models['CF 3 ply'].rootAssembly.setElementType(elemTypes=(ElemType(
+    elemCode=C3D8R, elemLibrary=STANDARD, secondOrderAccuracy=OFF, 
+    kinematicSplit=AVERAGE_STRAIN, hourglassControl=DEFAULT, 
+    distortionControl=DEFAULT), ElemType(elemCode=C3D6, elemLibrary=STANDARD), 
+    ElemType(elemCode=C3D4, elemLibrary=STANDARD)), regions=(
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    ('[#1 ]', ), ), ))
+mdb.models['CF 3 ply'].rootAssembly.generateMesh(regions=(
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'], ))
+mdb.models['CF 3 ply'].rootAssembly.Set(edges=
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'].edges.getSequenceFromMask(
+    ('[#3af ]', ), ), name='Set-4')
+mdb.models['CF 3 ply'].DisplacementBC(amplitude=UNSET, createStepName='Initial'
+    , distributionType=UNIFORM, fieldName='', localCsys=None, name=
+    'displacement BCs', region=
+    mdb.models['CF 3 ply'].rootAssembly.sets['Set-4'], u1=SET, u2=SET, u3=UNSET
+    , ur1=UNSET, ur2=UNSET, ur3=UNSET)
+mdb.models['CF 3 ply'].StaticStep(name='Loading', previous='Initial')
+mdb.models['CF 3 ply'].rootAssembly.Surface(name='Surf-1', side1Faces=
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'].faces.getSequenceFromMask(
+    ('[#10 ]', ), ))
+mdb.models['CF 3 ply'].Pressure(amplitude=UNSET, createStepName='Loading', 
+    distributionType=UNIFORM, field='', magnitude=303000.0, name=
+    'Internal pressure load', region=
+    mdb.models['CF 3 ply'].rootAssembly.surfaces['Surf-1'])
+mdb.models['CF 3 ply'].fieldOutputRequests['F-Output-1'].setValues(variables=(
+    'S', 'PE', 'PEEQ', 'PEMAG', 'LE', 'U', 'RF', 'CF', 'CSTRESS', 'CDISP', 
+    'DAMAGEC', 'DAMAGET', 'DAMAGEFT', 'DAMAGEFC', 'DAMAGEMT', 'DAMAGEMC', 
+    'DAMAGESHR', 'SDEG', 'JK', 'CFAILURE', 'DBS', 'DBT', 'DBSF', 'OPENBC', 
+    'CRSTS', 'ENRRT', 'EFENRRTR', 'BDSTAT', 'DMICRT', 'HSNFTCRT', 'HSNFCCRT', 
+    'HSNMTCRT', 'HSNMCCRT', 'ERPRATIO', 'SHRRATIO', 'CSDMG', 'CSMAXSCRT', 
+    'CSMAXUCRT', 'CSQUADSCRT', 'CSQUADUCRT', 'PHILSM', 'PSILSM'))
+# Save by nab2 on 2017_04_21-14.27.20; build 2016.HF5 2016_07_06-08.50.19 127027
+# Save by nab2 on 2017_04_21-14.27.25; build 2016.HF5 2016_07_06-08.50.19 127027
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['CF 3 ply'].rootAssembly.setElementType(elemTypes=(ElemType(
+    elemCode=SC8R, elemLibrary=STANDARD, secondOrderAccuracy=OFF, 
+    hourglassControl=DEFAULT), ElemType(elemCode=SC6R, elemLibrary=STANDARD), 
+    ElemType(elemCode=UNKNOWN_TET, elemLibrary=STANDARD)), regions=(
+    mdb.models['CF 3 ply'].rootAssembly.instances['Part-1-1'].cells.getSequenceFromMask(
+    ('[#1 ]', ), ), ))
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='CF 3 ply', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='ex', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': "YOUNG'S MODULI DEFINED BY ENGINEERING CONSTANTS CANNOT BE ZERO. USE TYPE=LAMINA INSTEAD FOR PLANE STRESS PROBLEMS", 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': 'SHEAR MODULUS DEFINED BY ENGINEERING CONSTANTS MUST BE POSITIVE.  FOR ZERO SHEAR MODULUS, USE A SMALL NUMBER GREATER THAN 1.00000E-36', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {'phase': BATCHPRE_PHASE, 
+    'message': '240 elements have zero transvere shear stiffness. The elements have been identified in element set ErrElemZeroTransShearStiff.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Analysis Input File Processor exited with an error.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].materials['CF'].elastic.setValues(table=((70000000000.0, 
+    0.1), ), type=ISOTROPIC)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 6480, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 1U', 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 2U', 
+    'timeIncrement': 0.25, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 3U', 
+    'timeIncrement': 0.0625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 4U', 
+    'timeIncrement': 0.015625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 5U', 
+    'timeIncrement': 0.00390625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].steps['Loading'].setValues(maxNumInc=10)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 1600, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 1U', 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 2U', 
+    'timeIncrement': 0.25, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 3U', 
+    'timeIncrement': 0.0625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 4U', 
+    'timeIncrement': 0.015625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 5U', 
+    'timeIncrement': 0.00390625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].steps['Loading'].setValues(initialInc=0.01, maxInc=0.5, 
+    maxNumInc=100)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 8632, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 1U', 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 2U', 
+    'timeIncrement': 0.0025, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 3U', 
+    'timeIncrement': 0.000625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 4U', 
+    'timeIncrement': 0.00015625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 5U', 
+    'timeIncrement': 3.90625e-05, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].steps['Loading'].setValues(maxInc=1.0)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 13388, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 1U', 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 2U', 
+    'timeIncrement': 0.0025, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 3U', 
+    'timeIncrement': 0.000625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 4U', 
+    'timeIncrement': 0.00015625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 5U', 
+    'timeIncrement': 3.90625e-05, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].steps['Loading'].setValues(maxNumInc=500)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 14112, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 1U', 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 2U', 
+    'timeIncrement': 0.0025, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 3U', 
+    'timeIncrement': 0.000625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 4U', 
+    'timeIncrement': 0.00015625, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0, 'attempts': ' 5U', 
+    'timeIncrement': 3.90625e-05, 'increment': 1, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'equilibrium': 5})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].steps['Loading'].setValues(maxNumInc=100)
+mdb.models['CF 3 ply'].loads['Internal pressure load'].setValues(magnitude=1.0)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 11776, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.01, 'attempts': ' 1U', 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'equilibrium': 4})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': 2, 
+    'timeIncrement': 0.0025, 'increment': 2, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 1U', 
+    'timeIncrement': 0.00375, 'increment': 3, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 7, 'phase': STANDARD_PHASE, 
+    'equilibrium': 7})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 2U', 
+    'timeIncrement': 0.0009375, 'increment': 3, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'equilibrium': 4})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 3U', 
+    'timeIncrement': 0.000234375, 'increment': 3, 'stepTime': 0.0125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 4U', 
+    'timeIncrement': 5.859375e-05, 'increment': 3, 'stepTime': 0.0125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 5U', 
+    'timeIncrement': 1.46484375e-05, 'increment': 3, 'stepTime': 0.0125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 4, 
+    'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': 6, 
+    'timeIncrement': 1e-35, 'increment': 3, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'equilibrium': 4})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'THE ANALYSIS HAS BEEN TERMINATED DUE TO PREVIOUS ERRORS. ALL OUTPUT REQUESTS HAVE BEEN WRITTEN FOR THE LAST CONVERGED INCREMENT.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].steps['Loading'].setValues(maxNumInc=500)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 2612, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.01, 'attempts': ' 1U', 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'equilibrium': 4})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': 2, 
+    'timeIncrement': 0.0025, 'increment': 2, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 1U', 
+    'timeIncrement': 0.00375, 'increment': 3, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 7, 'phase': STANDARD_PHASE, 
+    'equilibrium': 7})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 2U', 
+    'timeIncrement': 0.0009375, 'increment': 3, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'equilibrium': 4})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 3U', 
+    'timeIncrement': 0.000234375, 'increment': 3, 'stepTime': 0.0125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 4U', 
+    'timeIncrement': 5.859375e-05, 'increment': 3, 'stepTime': 0.0125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': ' 5U', 
+    'timeIncrement': 1.46484375e-05, 'increment': 3, 'stepTime': 0.0125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 4, 
+    'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0125, 'attempts': 6, 
+    'timeIncrement': 1e-35, 'increment': 3, 'stepTime': 0.0125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'equilibrium': 4})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'THE ANALYSIS HAS BEEN TERMINATED DUE TO PREVIOUS ERRORS. ALL OUTPUT REQUESTS HAVE BEEN WRITTEN FOR THE LAST CONVERGED INCREMENT.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].loads['Internal pressure load'].setValues(magnitude=0.1)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 11504, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0575, 'attempts': ' 1U', 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'equilibrium': 4})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0575, 'attempts': ' 2U', 
+    'timeIncrement': 0.0084375, 'increment': 5, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 7, 'phase': STANDARD_PHASE, 
+    'equilibrium': 7})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.059609375, 'attempts': 3, 
+    'timeIncrement': 0.002109375, 'increment': 5, 'stepTime': 0.059609375, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.059609375, 'attempts': ' 1U', 
+    'timeIncrement': 0.0031640625, 'increment': 6, 'stepTime': 0.059609375, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 4, 
+    'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.059609375, 'attempts': ' 2U', 
+    'timeIncrement': 0.000791015625, 'increment': 6, 'stepTime': 0.059609375, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.05980712890625, 'attempts': 3, 
+    'timeIncrement': 0.00019775390625, 'increment': 6, 
+    'stepTime': 0.05980712890625, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.05980712890625, 
+    'attempts': ' 1U', 'timeIncrement': 0.000296630859375, 'increment': 7, 
+    'stepTime': 0.05980712890625, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.05980712890625, 
+    'attempts': ' 2U', 'timeIncrement': 7.415771484375e-05, 'increment': 7, 
+    'stepTime': 0.05980712890625, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 5, 'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0598256683349609, 
+    'attempts': 3, 'timeIncrement': 1.85394287109375e-05, 'increment': 7, 
+    'stepTime': 0.0598256683349609, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0598256683349609, 
+    'attempts': ' 1U', 'timeIncrement': 2.78091430664063e-05, 'increment': 8, 
+    'stepTime': 0.0598256683349609, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Time increment required is less than the minimum specified', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0598256683349609, 
+    'attempts': ' 2U', 'timeIncrement': 1e-05, 'increment': 8, 
+    'stepTime': 0.0598256683349609, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 5, 'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0598256683349609, 
+    'attempts': 3, 'timeIncrement': 1e-35, 'increment': 8, 
+    'stepTime': 0.0598256683349609, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 0, 'phase': STANDARD_PHASE, 'equilibrium': 0})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'THE ANALYSIS HAS BEEN TERMINATED DUE TO PREVIOUS ERRORS. ALL OUTPUT REQUESTS HAVE BEEN WRITTEN FOR THE LAST CONVERGED INCREMENT.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.models['CF 3 ply'].loads['Internal pressure load'].setValues(magnitude=
+    0.01)
+mdb.jobs['ex'].submit(consistencyChecking=OFF)
+mdb.jobs['ex']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'COMPRESSIVE FAILURE VALUES MUST BE NEGATIVE. NEGATIVE OF INPUT TAKEN.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO BIAXIAL STRESS LIMIT GIVEN.  DEFAULT F12 USED.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PHILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST PSILSM IS ONLY VALID WITH XFEM', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT VARIABLE DMICRT HAS NO COMPONENTS IN THIS ANALYSIS FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'STRAIN OUTPUT REQUEST LE IS NOT VALID FOR SOME ELEMENTS IN THIS ANALYSIS. THIS REQUEST IS SWITCHED TO THE STRAIN MEASURE, E.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGEC IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST DAMAGET IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST ERPRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SDEG IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST SHRRATIO IS NOT AVAILABLE FOR ANY MATERIAL OF THE COMPOSITE SECTION FOR ELEMENT TYPE SC8R', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\ex.odb', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 10292, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'ex', 'memory': 26.0})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.01, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 1, 'stepTime': 0.01, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.02, 'attempts': 1, 
+    'timeIncrement': 0.01, 'increment': 2, 'stepTime': 0.02, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.035, 'attempts': 1, 
+    'timeIncrement': 0.015, 'increment': 3, 'stepTime': 0.035, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.0575, 'attempts': 1, 
+    'timeIncrement': 0.0225, 'increment': 4, 'stepTime': 0.0575, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.09125, 'attempts': 1, 
+    'timeIncrement': 0.03375, 'increment': 5, 'stepTime': 0.09125, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.141875, 'attempts': 1, 
+    'timeIncrement': 0.050625, 'increment': 6, 'stepTime': 0.141875, 'step': 1, 
+    'jobName': 'ex', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.2178125, 'attempts': 1, 
+    'timeIncrement': 0.0759375, 'increment': 7, 'stepTime': 0.2178125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.2178125, 'attempts': ' 1U', 
+    'timeIncrement': 0.11390625, 'increment': 8, 'stepTime': 0.2178125, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.2462890625, 'attempts': 2, 
+    'timeIncrement': 0.0284765625, 'increment': 8, 'stepTime': 0.2462890625, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.2462890625, 'attempts': ' 1U', 
+    'timeIncrement': 0.04271484375, 'increment': 9, 'stepTime': 0.2462890625, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 4, 
+    'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.2569677734375, 'attempts': 2, 
+    'timeIncrement': 0.0106787109375, 'increment': 9, 
+    'stepTime': 0.2569677734375, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.2569677734375, 
+    'attempts': ' 1U', 'timeIncrement': 0.01601806640625, 'increment': 10, 
+    'stepTime': 0.2569677734375, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 5, 'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.2569677734375, 
+    'attempts': ' 2U', 'timeIncrement': 0.0040045166015625, 'increment': 10, 
+    'stepTime': 0.2569677734375, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 5, 'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 10, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.257968902587891, 'attempts': 3, 
+    'timeIncrement': 0.00100112915039063, 'increment': 10, 
+    'stepTime': 0.257968902587891, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.257968902587891, 
+    'attempts': ' 1U', 'timeIncrement': 0.00150169372558594, 'increment': 11, 
+    'stepTime': 0.257968902587891, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 6, 'phase': STANDARD_PHASE, 'equilibrium': 6})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.257968902587891, 
+    'attempts': ' 2U', 'timeIncrement': 0.000375423431396484, 'increment': 11, 
+    'stepTime': 0.257968902587891, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 5, 'phase': STANDARD_PHASE, 'equilibrium': 5})
+mdb.jobs['ex']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero FORCE everywhere in the model based on the default criterion. please check the value of the average FORCE during the current iteration to verify that the FORCE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero FORCE.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 11, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.25806275844574, 'attempts': 3, 
+    'timeIncrement': 9.38558578491211e-05, 'increment': 11, 
+    'stepTime': 0.25806275844574, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.25806275844574, 
+    'attempts': ' 1U', 'timeIncrement': 0.000140783786773682, 'increment': 12, 
+    'stepTime': 0.25806275844574, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.25806275844574, 
+    'attempts': ' 2U', 'timeIncrement': 3.51959466934204e-05, 'increment': 12, 
+    'stepTime': 0.25806275844574, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Time increment required is less than the minimum specified', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.25806275844574, 
+    'attempts': ' 3U', 'timeIncrement': 1e-05, 'increment': 12, 
+    'stepTime': 0.25806275844574, 'step': 1, 'jobName': 'ex', 'severe': 0, 
+    'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['ex']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 12, 'jobName': 'ex'})
+mdb.jobs['ex']._Message(STATUS, {'totalTime': 0.25806275844574, 'attempts': 4, 
+    'timeIncrement': 1e-35, 'increment': 12, 'stepTime': 0.25806275844574, 
+    'step': 1, 'jobName': 'ex', 'severe': 0, 'iterations': 0, 
+    'phase': STANDARD_PHASE, 'equilibrium': 0})
+mdb.jobs['ex']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'THE ANALYSIS HAS BEEN TERMINATED DUE TO PREVIOUS ERRORS. ALL OUTPUT REQUESTS HAVE BEEN WRITTEN FOR THE LAST CONVERGED INCREMENT.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'ex'})
+mdb.jobs['ex']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+mdb.jobs['ex']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'ex'})
+# Save by nab2 on 2017_04_21-15.12.17; build 2016.HF5 2016_07_06-08.50.19 127027
