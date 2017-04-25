@@ -35,13 +35,14 @@ PSAS requires a composite fuel tank that ...
 
 ## Design Challenges
 
-The team's primary design challenge is isolating the LOX fuel from reactive materials, such as the Structural Carbon Fiber layers, and maintaining a seal at room-temperatures, as well as at cryogenic, operational temperatures.
+The team's primary design challenges are isolating the LOX fuel from reactive materials, such as the structural Carbon Fiber layers, and maintaining a seal at room-temperature, as well as at cryogenic, operational temperatures.
 
 ## Outcomes
 
-The team has developed a conceptual design that 
+The team has developed a tank design that takes the current PSAS airframe design and incorporates a LOX-compatable PTFE liner to chemically insulate the tank from LOX and shrink-fit aluminum end-caps to mechanically seal the LOX off from the rest of the airframe structure at room and cryogenic temperatures.
 
-The following plot shows performance of the system in response to a change
-in our main design variable ...
+The following image shows an exploded view of our current tank design.
 
-!Data representation]({{ "/projects/images/plots.png" | absolute_url }})
+![Data representation]({{ "/projects/images/exploded_view.png" | absolute_url }})
+
+Testing is currently underway to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. 
