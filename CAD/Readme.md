@@ -32,7 +32,7 @@ end cap and a bell shaped end cap. The flat endcap requires nuts and washers to 
 end cap has threading to attach the fittings. Note: to view the bell shaped endcap suppress End Cap<1> and End Cap <2> and unsuppress 
 Alternative End Cap and No Holes End Cap. This design requires an aluminum bridge (not shown) to bond the sheet in a tube shape.
 
-- Tank Iteration 4: (current\Flat End Cap Model (0.125-in Tube Liner)) This model uses an 1/8^th inch tube of PTFE and has a flat endcap
+- Tank Iteration 4: (current\Flat End Cap Model (0.125-in Tube Liner)) This model uses an 1/8<sup>th</sup> inch tube of PTFE and has a flat endcap
 
 - Tank Iteration 5: (current\Shrink Fit Model (0.125-in Tube Liner)) End cap was modified for a shrink fit design. The sizing for the fitting
 portion will be complete when the size calculations are done. We are also considering adding a keyway for hole alignment.
