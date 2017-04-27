@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="183ad1d4-ccaf-4100-95c7-8f69e09d0120" name="Default" comment="" />
+    <list default="true" id="183ad1d4-ccaf-4100-95c7-8f69e09d0120" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +18,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test_Notebook.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
+      <file leaf-file-name="LOX_BoilOff_HeatTransferAnalysis.ipynb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="0" />
+              <selected id="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LOX_BoilOff_HeatTransferAnalysis.ipynb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
+      <file leaf-file-name="2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
               <selected id="1" />
@@ -38,8 +41,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -57,6 +60,7 @@
         <option value="$PROJECT_DIR$/Test_Notebook.ipynb" />
         <option value="$PROJECT_DIR$/Analysis/Calculations/HT Scratch Code.py" />
         <option value="$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb" />
+        <option value="$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb" />
       </list>
     </option>
   </component>
@@ -67,9 +71,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
+    <option name="x" value="826" />
     <option name="y" value="14" />
-    <option name="width" value="1595" />
+    <option name="width" value="779" />
     <option name="height" value="860" />
   </component>
   <component name="ProjectView">
@@ -87,7 +91,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -133,22 +136,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="composite-propellant-tank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="composite-propellant-tank" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".ipynb_checkpoints" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -485,10 +475,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="14" width="1595" height="860" extended-state="0" />
-    <editor active="false" />
+    <frame x="826" y="14" width="779" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25407165" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.257329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32692307" sideWeight="0.5022801" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -579,6 +569,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
     <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
@@ -594,6 +598,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Analysis/Calculations/HT Scratch Code.py" />
     <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="1" />
