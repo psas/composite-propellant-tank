@@ -34,7 +34,12 @@ We will have to explain to Gerry that are design considerations are being shorte
 
 Concerns with METLBOND 1515 & LOX
 
+<<<<<<< HEAD
 From Metlbond Data Sheet… see image01 in Team Agenda/old meeting notes
+=======
+From Metlbond Data Sheet… see meeting_notes/media/media folder for image01
+
+>>>>>>> 0775c3378a4b91f935efead1582eba437a0d2da8
 
 Would like to run simple test with coupons + metlbond asap, (ex submerging in small amount of LOX) to test degradation/speed of potential failure...may not have immediate effect and will work out OK
 

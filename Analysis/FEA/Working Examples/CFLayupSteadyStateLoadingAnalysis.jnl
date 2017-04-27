@@ -1,0 +1,351 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['Model-1'].ConstrainedSketch(name='__profile__', sheetSize=200.0)
+mdb.models['Model-1'].sketches['__profile__'].rectangle(point1=(-35.0, 25.0), 
+    point2=(50.0, -15.0))
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    2.29970169067383, -20.6083908081055), value=130.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[1], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[2])
+mdb.models['Model-1'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    -88.181884765625, 6.1559886932373), value=60.0, vertex1=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[0], vertex2=
+    mdb.models['Model-1'].sketches['__profile__'].vertices[1])
+mdb.models['Model-1'].Part(dimensionality=THREE_D, name='Part-1', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1'].parts['Part-1'].BaseShell(sketch=
+    mdb.models['Model-1'].sketches['__profile__'])
+del mdb.models['Model-1'].sketches['__profile__']
+mdb.models['Model-1'].Material(name='Composite')
+mdb.models['Model-1'].materials['Composite'].Elastic(table=((138000.0, 9500.0, 
+    9500.0, 0.28, 0.28, 0.4, 5200.0, 5200.0, 1450.0), ), type=
+    ENGINEERING_CONSTANTS)
+mdb.models['Model-1'].parts['Part-1'].CompositeLayup(description='', 
+    elementType=SHELL, name='CompositeLayup-1', offsetType=MIDDLE_SURFACE, 
+    symmetric=True, thicknessAssignment=FROM_SECTION)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CompositeLayup-1'].Section(
+    integrationRule=SIMPSON, poissonDefinition=DEFAULT, preIntegrate=OFF, 
+    temperature=GRADIENT, thicknessType=UNIFORM, useDensity=OFF)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CompositeLayup-1'].ReferenceOrientation(
+    additionalRotationType=ROTATION_NONE, angle=0.0, axis=AXIS_3, fieldName='', 
+    localCsys=None, orientationType=GLOBAL)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CompositeLayup-1'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='Composite', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=0.0, plyName='Ply-1', region=Region(
+    faces=mdb.models['Model-1'].parts['Part-1'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), )), suppressed=False, thickness=0.3, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CompositeLayup-1'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='Composite', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=45.0, plyName='Ply-2', region=Region(
+    faces=mdb.models['Model-1'].parts['Part-1'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), )), suppressed=False, thickness=0.3, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['Model-1'].parts['Part-1'].compositeLayups['CompositeLayup-1'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='Composite', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=-45.0, plyName='Ply-3', region=Region(
+    faces=mdb.models['Model-1'].parts['Part-1'].faces.getSequenceFromMask(
+    mask=('[#1 ]', ), )), suppressed=False, thickness=0.3, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['Model-1'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['Model-1'].rootAssembly.Instance(dependent=ON, name='Part-1-1', 
+    part=mdb.models['Model-1'].parts['Part-1'])
+mdb.models['Model-1'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['Model-1'].parts['Part-1'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=2.0)
+mdb.models['Model-1'].parts['Part-1'].generateMesh()
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.models['Model-1'].rootAssembly.Set(edges=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].edges.getSequenceFromMask(
+    ('[#2 ]', ), ), name='Set-1')
+mdb.models['Model-1'].EncastreBC(createStepName='Step-1', localCsys=None, name=
+    'BC-1', region=mdb.models['Model-1'].rootAssembly.sets['Set-1'])
+mdb.models['Model-1'].rootAssembly.Set(edges=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].edges.getSequenceFromMask(
+    ('[#8 ]', ), ), name='Set-2')
+mdb.models['Model-1'].DisplacementBC(amplitude=UNSET, createStepName='Step-1', 
+    distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-2', region=mdb.models['Model-1'].rootAssembly.sets['Set-2'], u1=UNSET, 
+    u2=0.0, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['Model-1'].rootAssembly.Surface(name='Surf-1', side1Edges=
+    mdb.models['Model-1'].rootAssembly.instances['Part-1-1'].edges.getSequenceFromMask(
+    ('[#8 ]', ), ))
+mdb.models['Model-1'].ShellEdgeLoad(createStepName='Step-1', distributionType=
+    UNIFORM, field='', localCsys=None, magnitude=100.0, name='Load-1', region=
+    mdb.models['Model-1'].rootAssembly.surfaces['Surf-1'])
+mdb.models['Model-1'].rootAssembly.regenerate()
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='Model-1', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='Job-1', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['Job-1'].submit(consistencyChecking=OFF)
+mdb.jobs['Job-1']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\Job-1.odb', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 10964, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'Job-1', 'memory': 53.0})
+mdb.jobs['Job-1']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'Job-1', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['Job-1']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'Job-1'})
+mdb.jobs['Job-1']._Message(JOB_COMPLETED, {'time': 'Wed Apr 26 12:52:16 2017', 
+    'jobName': 'Job-1'})
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Model(modelType=STANDARD_EXPLICIT, name='cyl model')
+mdb.models['cyl model'].ConstrainedSketch(name='__profile__', sheetSize=0.4)
+mdb.models['cyl model'].sketches['__profile__'].CircleByCenterPerimeter(center=
+    (0.0, 0.0), point1=(0.0425, -0.0225))
+mdb.models['cyl model'].sketches['__profile__'].CircleByCenterPerimeter(center=
+    (0.0, 0.0), point1=(0.0375, -0.02))
+mdb.models['cyl model'].sketches['__profile__'].RadialDimension(curve=
+    mdb.models['cyl model'].sketches['__profile__'].geometry[2], radius=0.0381, 
+    textPoint=(-0.0907157212495804, 0.0202657282352448))
+mdb.models['cyl model'].sketches['__profile__'].RadialDimension(curve=
+    mdb.models['cyl model'].sketches['__profile__'].geometry[3], radius=0.0281, 
+    textPoint=(-0.0842569917440414, 0.00499299913644791))
+mdb.models['cyl model'].Part(dimensionality=THREE_D, name='cyl', type=
+    DEFORMABLE_BODY)
+mdb.models['cyl model'].parts['cyl'].BaseShellExtrude(depth=0.13335, sketch=
+    mdb.models['cyl model'].sketches['__profile__'])
+del mdb.models['cyl model'].sketches['__profile__']
+mdb.models['cyl model'].ConstrainedSketch(name='__edit__', objectToCopy=
+    mdb.models['cyl model'].parts['cyl'].features['Shell extrude-1'].sketch)
+mdb.models['cyl model'].parts['cyl'].projectReferencesOntoSketch(filter=
+    COPLANAR_EDGES, sketch=mdb.models['cyl model'].sketches['__edit__'], 
+    upToFeature=
+    mdb.models['cyl model'].parts['cyl'].features['Shell extrude-1'])
+mdb.models['cyl model'].sketches['__edit__'].autoTrimCurve(curve1=
+    mdb.models['cyl model'].sketches['__edit__'].geometry[3], point1=(
+    -0.0144000872969627, 0.0204894542694092))
+mdb.models['cyl model'].parts['cyl'].features['Shell extrude-1'].setValues(
+    sketch=mdb.models['cyl model'].sketches['__edit__'])
+del mdb.models['cyl model'].sketches['__edit__']
+mdb.models['cyl model'].parts['cyl'].regenerate()
+mdb.models['cyl model'].Material(name='CF Epoxy')
+mdb.models['cyl model'].materials['CF Epoxy'].Elastic(table=((3500000000.0, 
+    3300000000.0, 3300000000.0, 0.35, 0.35, 0.35, 1.3, 1.3, 1.3), ), type=
+    ENGINEERING_CONSTANTS)
+mdb.models['cyl model'].parts['cyl'].CompositeLayup(description='', 
+    elementType=SHELL, name='CompositeLayupConvShell', offsetType=
+    MIDDLE_SURFACE, symmetric=True, thicknessAssignment=FROM_SECTION)
+mdb.models['cyl model'].parts['cyl'].compositeLayups['CompositeLayupConvShell'].Section(
+    integrationRule=SIMPSON, poissonDefinition=DEFAULT, preIntegrate=OFF, 
+    temperature=GRADIENT, thicknessType=UNIFORM, useDensity=OFF)
+mdb.models['cyl model'].parts['cyl'].compositeLayups['CompositeLayupConvShell'].ReferenceOrientation(
+    additionalRotationType=ROTATION_NONE, angle=0.0, axis=AXIS_3, fieldName='', 
+    localCsys=None, orientationType=GLOBAL)
+mdb.models['cyl model'].parts['cyl'].compositeLayups['CompositeLayupConvShell'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF Epoxy', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=0.0, plyName='Ply-1', region=Region(
+    faces=mdb.models['cyl model'].parts['cyl'].faces.getSequenceFromMask(mask=(
+    '[#1 ]', ), )), suppressed=False, thickness=0.00254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['cyl model'].parts['cyl'].compositeLayups['CompositeLayupConvShell'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF Epoxy', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=90.0, plyName='Ply-2', region=Region(
+    faces=mdb.models['cyl model'].parts['cyl'].faces.getSequenceFromMask(mask=(
+    '[#1 ]', ), )), suppressed=False, thickness=0.00254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['cyl model'].parts['cyl'].compositeLayups['CompositeLayupConvShell'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF Epoxy', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=-90.0, plyName='Ply-3', region=Region(
+    faces=mdb.models['cyl model'].parts['cyl'].faces.getSequenceFromMask(mask=(
+    '[#1 ]', ), )), suppressed=False, thickness=0.00254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['cyl model'].rootAssembly.DatumCsysByDefault(CARTESIAN)
+mdb.models['cyl model'].rootAssembly.Instance(dependent=ON, name='cyl-1', part=
+    mdb.models['cyl model'].parts['cyl'])
+mdb.models['cyl model'].StaticStep(name='Step-1', previous='Initial')
+mdb.models['cyl model'].parts['cyl'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=0.011)
+mdb.models['cyl model'].parts['cyl'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=0.008)
+mdb.models['cyl model'].parts['cyl'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=0.005)
+mdb.models['cyl model'].parts['cyl'].seedPart(deviationFactor=0.1, 
+    minSizeFactor=0.1, size=0.003)
+mdb.models['cyl model'].parts['cyl'].generateMesh()
+mdb.models['cyl model'].rootAssembly.regenerate()
+mdb.models['cyl model'].rootAssembly.Set(edges=
+    mdb.models['cyl model'].rootAssembly.instances['cyl-1'].edges.getSequenceFromMask(
+    ('[#3 ]', ), ), name='Set-1')
+mdb.models['cyl model'].DisplacementBC(amplitude=UNSET, createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'BC-1', region=mdb.models['cyl model'].rootAssembly.sets['Set-1'], u1=UNSET
+    , u2=UNSET, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['cyl model'].rootAssembly.Surface(name='Surf-1', side1Edges=
+    mdb.models['cyl model'].rootAssembly.instances['cyl-1'].edges.getSequenceFromMask(
+    ('[#2 ]', ), ))
+mdb.models['cyl model'].ShellEdgeLoad(createStepName='Step-1', 
+    distributionType=UNIFORM, field='', localCsys=None, magnitude=4000.0, name=
+    'LaunchCondLoad', region=
+    mdb.models['cyl model'].rootAssembly.surfaces['Surf-1'])
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='cyl model', modelPrint=OFF, 
+    multiprocessingMode=DEFAULT, name='cylCF', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['cylCF'].submit(consistencyChecking=OFF)
+mdb.jobs['cylCF']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\cylCF.odb', 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 1492, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'cylCF', 'memory': 88.0})
+mdb.jobs['cylCF']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero MOMENT everywhere in the model based on the default criterion. please check the value of the average MOMENT during the current iteration to verify that the MOMENT is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero MOMENT.', 
+    'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'cylCF', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['cylCF']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(JOB_COMPLETED, {'time': 'Wed Apr 26 14:03:14 2017', 
+    'jobName': 'cylCF'})
+del mdb.models['cyl model'].boundaryConditions['BC-1']
+mdb.models['cyl model'].rootAssembly.Set(edges=
+    mdb.models['cyl model'].rootAssembly.instances['cyl-1'].edges.getSequenceFromMask(
+    ('[#1 ]', ), ), name='Set-2')
+mdb.models['cyl model'].DisplacementBC(amplitude=UNSET, createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'bottom', region=mdb.models['cyl model'].rootAssembly.sets['Set-2'], u1=
+    UNSET, u2=UNSET, u3=0.0, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.models['cyl model'].rootAssembly.Set(edges=
+    mdb.models['cyl model'].rootAssembly.instances['cyl-1'].edges.getSequenceFromMask(
+    ('[#2 ]', ), ), name='Set-3')
+mdb.models['cyl model'].DisplacementBC(amplitude=UNSET, createStepName='Step-1'
+    , distributionType=UNIFORM, fieldName='', fixed=OFF, localCsys=None, name=
+    'top', region=mdb.models['cyl model'].rootAssembly.sets['Set-3'], u1=UNSET, 
+    u2=UNSET, u3=UNSET, ur1=0.0, ur2=0.0, ur3=0.0)
+mdb.jobs['cylCF'].submit(consistencyChecking=OFF)
+mdb.jobs['cylCF']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae07', 'handle': 0, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\cylCF.odb', 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae07', 'handle': 13720, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'cylCF', 'memory': 88.0})
+mdb.jobs['cylCF']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero MOMENT everywhere in the model based on the default criterion. please check the value of the average MOMENT during the current iteration to verify that the MOMENT is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero MOMENT.', 
+    'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'cylCF', 'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'equilibrium': 1})
+mdb.jobs['cylCF']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'cylCF'})
+mdb.jobs['cylCF']._Message(JOB_COMPLETED, {'time': 'Wed Apr 26 14:08:46 2017', 
+    'jobName': 'cylCF'})
+# Save by nab2 on 2017_04_26-14.31.16; build 2016.HF5 2016_07_06-08.50.19 127027
+# Save by nab2 on 2017_04_26-15.19.53; build 2016.HF5 2016_07_06-08.50.19 127027
