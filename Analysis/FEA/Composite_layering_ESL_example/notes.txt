@@ -1,4 +1,0 @@
-this is tough...need more resources/time to investigate.  database file not currently working
-
-attempting to model simple layering scheme with 3 plys of CF, would eventually like to incorporate PTFE Nomex Al into layers to do a stress analysis,
-at least under the pressure load, then incorporate heat xfer once the model is established.
