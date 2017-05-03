@@ -12,7 +12,7 @@ The objective of this project is to develop a design and a manufacturing process
 
 ## Team
 
-![Team Rocket]( {{ "/projects/images/capstone_team.jpg" | absolute_url }} )
+![Team Rocket]( {{ "/projects/images/PSAS_Tank_Group_.jpg" | absolute_url }} )
 
 The project team is
 
@@ -41,8 +41,10 @@ The team's primary design challenges are isolating the LOX fuel from reactive ma
 
 The team has developed a tank design that takes the current PSAS airframe design and incorporates a LOX-compatable PTFE liner to chemically insulate the tank from LOX and shrink-fit aluminum end-caps to mechanically seal the LOX off from the rest of the airframe structure at room and cryogenic temperatures.
 
+![Tank representation]({{ "/projects/images/PSAS_Tank_filltank_perspective_2017-05-02.png" | absolute_url }})
+
 The following image shows an exploded view of our current tank design.
 
-![Data representation]({{ "/projects/images/exploded_view.png" | absolute_url }})
+![layer representation]({{ "/projects/images/PSAS_Tank_exploded_View_2017-05-2.png" | absolute_url }})
 
 Testing is currently underway to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. 
