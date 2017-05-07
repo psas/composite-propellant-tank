@@ -11,7 +11,7 @@ A = 0.005m^2 (*Surface Area of Ring*)
 
 d = 0.005 m (*Thickness of Ring*)
 
-$\delta$ T = 215C (*Change in Temperature, from Room to Cryo-temp*)
+deltaT = 215C (*Change in Temperature, from Room to Cryo-temp*)
 
 
 ### Total Heat Transfered:
