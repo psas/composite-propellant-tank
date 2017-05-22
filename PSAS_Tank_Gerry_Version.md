@@ -27,15 +27,15 @@ The project team is
 
 PSAS requires a composite fuel tank that ...
 
-- is liquid oxygen (LOX) safe for duration of fill cycle and launch.
-- does not fail when pressurized to 6 ATM.
-- won’t fail at expected scaled LV4 flight loadings (meets Factor of Safety =2) for combined loads of thermal and propellant stresses.
-- has a manufacturing process which can be performed in the ME department machine shop, or outsourced for a reasonable fee (< $500).
+- is liquid oxygen (LOX) safe for duration of fill cycle and launch (30 minutes to 1 hour).
+- does not fail (leak, fracture, or explode) when pressurized to 6 ATM (x2 operational pressure)
+- Won’t fail at expected scaled LV4 flight loadings (meets Factor of Safety = 2) for combined loads of thermal and propellant stresses.
+- has a manufacturing process which can be performed in the ME department machine shop, or outsourced for a reasonable fee (<$500).
 
 
 ## Design Challenges
 
-The team's primary design challenges are isolating the LOX fuel from reactive materials, such as the structural Carbon Fiber layers, and maintaining a seal at room-temperature, as well as at cryogenic, operational temperatures.
+The team's primary design challenges are isolating the LOX fuel from reactive materials, such as the structural Carbon Fiber layers, and maintaining a seal at room-temperature, as well as at cryogenic operational temperatures. An additional challenge is confirming the structural integrety of the pre-existing carbon-fiber airframe at Cryogenic temperatures and operational pressures.
 
 ## Outcomes
 
