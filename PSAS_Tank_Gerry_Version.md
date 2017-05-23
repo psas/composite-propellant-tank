@@ -35,12 +35,12 @@ PSAS requires a composite fuel tank that ...
 
 ## Design Challenges
 
-The team's primary design challenges are isolating the LOX fuel from reactive materials, such as the structural Carbon Fiber layers, and maintaining a seal at room-temperature, as well as at cryogenic operational temperatures. An additional challenge is confirming the structural integrety of the pre-existing carbon-fiber airframe at Cryogenic temperatures and operational pressures.
+The team's primary design challenges are isolating the LOX fuel from reactive materials, such as the structural Carbon Fiber layers, and maintaining a seal at room-temperature, as well as at cryogenic operational temperatures. An additional challenge is confirming the structural integrety of the pre-existing carbon-fiber airframe at cryogenic temperatures and operational pressures.
 
 ## Outcomes
 
 The team has developed two tank designs that take the current PSAS airframe design and incorporate a LOX-compatable PTFE liner to chemically insulate the tank from LOX. The first design employs aluminum mating rings lined with a PTFE tube and sealed with shrink-fit aluminum end-caps to mechanically seal the LOX off from the atmosphere as well as the rest of the airframe structure at room and cryogenic temperatures. The advantage of this design, if successful, is that the LOX will only be in contact with PTFE and Aluminum, materials tested and used in LOX environments with success.
-The second design utilizes a PTFE sheet liner held together with an aluminum bridge - generating a potential adhesive-lox interface to be mediated with LOX sealant. The endcaps of the sheet design are sealed to the aluminum mating rings with bolts and a PTFE gasket. The advantage of this design, if successful, is the affordability and ease of production, as it would require only an additional layer be added to the current airframe layup process.
+The second design utilizes a PTFE sheet liner held together with an aluminum bridge - generating a potential adhesive-lox interface to be mediated with LOX sealant. The endcaps of the sheet liner design are sealed to the aluminum mating rings with bolts and a PTFE gasket. The advantage of this design, if successful, is the affordability and ease of production, as it would require only an additional layer be added to the current airframe layup process.
 
 
 ### *ShrinkFit Tank Design*
@@ -81,4 +81,4 @@ Figure 4: ShrinkFit Tank Layup on Prototype PLA Rings
 Figure 4: ShrinkFit Completed Tank
 </figcaption>
 
-Material cryotesting has been performed to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. Complete prototypes of the two tank designs are currently being built, and compression and hydro-burst tested at cryotemperatures to determine strength and modes of failure. Tests assessing the reactivity and transport of LOX at the various tank interfaces and pressures is to begin shortly. The tank shown to most successfully withstand structural stresses without leaks or fracture, and LOX exposure without chemical reaction will be selected as the recommended tank design to PSAS.
+Material cryotesting has been performed to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. Complete prototypes of the two tank designs are currently being built and are being compression and hydro-burst tested at cryotemperatures to determine strength and modes of failure. Tests assessing the reactivity and transport of LOX at the various tank interfaces and pressures is to begin shortly. The tank shown to most successfully withstand structural stresses without leaks or fracture and LOX exposure without chemical reaction will be selected as the tank design recommended to PSAS.
