@@ -56,7 +56,7 @@ The following image shows an exploded view of our shrinkfit tank design.
 {:.center}
 ![layer representation]({{ "/projects/images/PSAS_Tank_exploded_View_2017-05-02.png" | absolute_url }})
 <figcaption class="center">
-Figure 2: ShrinkFit Tank Exploded View CAD
+Figure 2: ShrinkFit PTFE Tube Tank Exploded View CAD
 </figcaption>
 
 ### *Sheet Liner Tank Construction*
@@ -67,18 +67,18 @@ Figure 2: ShrinkFit Tank Exploded View CAD
 Figure 3: Sheet Liner Tank CAD
 </figcaption>
 
-The following images show the current layup process, using the sheet liner tank design and a completed tank.
+The following images show the current layup process, using the sheet liner tank design layup and a completed tank.
 
 {:.center}
 ![Sheet Liner Tank Layup]({{ "/projects/images/PSAS_Tank_Layup_Process.png" | absolute_url }})
 <figcaption class="center">
-Figure 4: ShrinkFit Tank Layup on Prototype PLA Rings
+Figure 4: Sheet Liner Tank Layup on Prototype PLA Rings
 </figcaption>
 
 {:.center}
 ![Shrinkfit Completed Tank]({{ "/projects/images/PSAS_Tank_CompletedTank" | absolute_url }})
 <figcaption class="center">
-Figure 5: ShrinkFit Completed Tank
+Figure 5: Sheet Liner Completed Tank
 </figcaption>
 
 Material cryotesting has been performed to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. Complete prototypes of the two tank designs are currently being built and are being compression and hydro-burst tested at cryotemperatures to determine strength and modes of failure. Tests assessing the reactivity and transport of LOX at the various tank interfaces and pressures is to begin shortly. The tank shown to most successfully withstand structural stresses without leaks or fracture and LOX exposure without chemical reaction will be selected as the tank design recommended to PSAS.
