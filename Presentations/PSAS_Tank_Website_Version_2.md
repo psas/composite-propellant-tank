@@ -30,7 +30,7 @@ PSAS requires a composite fuel tank that ...
 - is liquid oxygen (LOX) safe for duration of fill cycle and launch (30 minutes to 1 hour).
 - does not fail (leak, fracture, or explode) when pressurized to 6 ATM (x2 operational pressure)
 - Won’t fail at expected scaled LV4 flight loadings (meets Factor of Safety = 2) for combined loads of thermal and propellant stresses.
-- has a manufacturing process which can be performed in the ME department machine shop, or outsourced for a reasonable fee (<$500).
+- has a manufacturing process which can be performed in the ME department machine shop, or outsourced for a reasonable fee (<$500 per component, assuming max of 1-3 outsourced components).
 
 
 ## Design Challenges
@@ -78,7 +78,7 @@ Figure 4: ShrinkFit Tank Layup on Prototype PLA Rings
 {:.center}
 ![Shrinkfit Completed Tank]({{ "/projects/images/PSAS_Tank_CompletedTank" | absolute_url }})
 <figcaption class="center">
-Figure 4: ShrinkFit Completed Tank
+Figure 5: ShrinkFit Completed Tank
 </figcaption>
 
 Material cryotesting has been performed to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. Complete prototypes of the two tank designs are currently being built and are being compression and hydro-burst tested at cryotemperatures to determine strength and modes of failure. Tests assessing the reactivity and transport of LOX at the various tank interfaces and pressures is to begin shortly. The tank shown to most successfully withstand structural stresses without leaks or fracture and LOX exposure without chemical reaction will be selected as the tank design recommended to PSAS.

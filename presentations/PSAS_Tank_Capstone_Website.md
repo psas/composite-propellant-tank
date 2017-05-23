@@ -30,7 +30,7 @@ PSAS requires a composite fuel tank that ...
 - is liquid oxygen (LOX) safe for duration of fill cycle and launch.
 - does not fail when pressurized to 6 ATM.
 - won’t fail at expected scaled LV4 flight loadings (meets Factor of Safety =2) for combined loads of thermal and propellant stresses.
-- has a manufacturing process which can be performed in the ME department machine shop, or outsourced for a reasonable fee (< $500).
+- has a manufacturing process which can be performed in the ME department machine shop, or outsourced for a reasonable fee (<$500 per component, assuming 1-3 outsourced components).
 
 
 ## Design Challenges
