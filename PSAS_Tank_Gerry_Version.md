@@ -39,12 +39,22 @@ The team's primary design challenges are isolating the LOX fuel from reactive ma
 
 ## Outcomes
 
-The team has developed a tank design that takes the current PSAS airframe design and incorporates a LOX-compatable PTFE liner to chemically insulate the tank from LOX and shrink-fit aluminum end-caps to mechanically seal the LOX off from the rest of the airframe structure at room and cryogenic temperatures.
+The team has developed two tank designs that take the current PSAS airframe design and incorporate a LOX-compatable PTFE liner to chemically insulate the tank from LOX. The first design employs a PTFE tube liner with shrink-fit aluminum end-caps to mechanically seal the LOX off from the rest of the airframe structure at room and cryogenic temperatures. The advantage of this design, if successful, is that the LOX will only be in contact with PTFE and Aluminum, materials tested and used in LOX environments with success.
+The second design utilizes a PTFE sheet liner with an aluminum bridge and a potential adhesive-lox interface to be mediated with LOX sealant. The advantage of this design, if successful, is the affordability and ease of production, as it would require only an additional layer be added to the current airframe layup process.
 
-![Tank representation]({{ "/projects/images/PSAS_Tank_fulltank_perspective_2017-05-02.png" | absolute_url }})
 
-The following image shows an exploded view of our current tank design.
+##*ShrinkFit Tank Design*
+![ShrinkFit Tank representation]({{ "/projects/images/PSAS_Tank_fulltank_perspective_2017-05-02.png" | absolute_url }})
+
+The following image shows an exploded view of our shrinkfit tank design.
 
 ![layer representation]({{ "/projects/images/PSAS_Tank_exploded_View_2017-05-02.png" | absolute_url }})
 
-Testing is currently underway to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. 
+##*Sheet Liner Tank Design*
+![Sheet Liner Tank representation]({{ "/projects/images/PSAS_Tank_fulltank_perspective_2017-05-02.png" | absolute_url }})
+
+The following image shows an exploded view of our sheet liner tank design.
+
+![Sheet Liner Tank representation]({{ "/projects/images/PSAS_Tank_fulltank_perspective_2017-05-02.png" | absolute_url }})
+
+Material cryotesting has been performed to ascertain the material properties of the PTFE, in order to create a more accurate FEA model of the tank and allow for optimization of design geometry. Complete prototypes of the two tank designs are currently being built and compression and hydro-burst tested at cryotemperatures to determine strength and modes of failure. Tests assessing the reactivity and transport of LOX at the various tank interfaces and pressures is to begin shortly.The tank shown to most successfully withstand structural stresses without leaks or fracture, and LOX exposure without chemical reaction will be selected as the recommended tank design to PSAS.
