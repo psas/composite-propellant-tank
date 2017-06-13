@@ -13,56 +13,37 @@ Prototyping lightweight composite LOX and IPA tanks for LV4.
 - Difficult to incorperate cutouts
 - Significant problems with CTE mismatch when used in conjunction with metallic structures
 
+**The Ugly**:  Proof-of-Concept Composite Fuel Tank designed and built by 2017 PSAS Capstone Team. Currently undergoing testing and refinement.
 
-## Summary of Project and Design Artifacts
-• Analysis
 
-– Calculations (Hand Calculations and Python Scripts)
 
-– Finite Element Analysis (Code, Results, and Documentation)
+## Summary of 2017 Tank Capstone Project Design Artifacts
+* Analysis
+	* Calculations (Hand Calculations and Python Scripts)
+	* Finite Element Analysis (Code, Results, and Documentation)
 
-• CAD
+* Design 
+	* CAD (Current and Archive)
+	* Design Ideas
 
-– Archived Designs
+* Documents
+	* AIAA (Paper Abstract)
+	* Materials (MDS and Property info
+	* ME492 (Capstone Docs)
+	* ME493 (Capstone Docs)
+	* Research Documents (Literature Review Documents)
+	* OSGC (Oregon Space Grant Award Info)
+	* Presentations (Resources for project presentation)
+	* Resource Documents (How Tos and Readme Docs for Git, Jupyter, etc.)
+	* Safety (docs related to chemical safety)
+	*  Team Documents  (Team Agenda, Meeting notes, Contacts, etc.)
+	*  Templates (Experiment Templates)
+	*  Doc Readme and Standards of Documentation
+	*  Media (Photos and Videos)
+	
+*  Manufacturing (Procedural documents)
+*  Testing (Test results and procedures)
 
-– Current Designs
 
-• Design Ideas (Notes and Concept Drawings)
 
-• Materials (Material Data Sheets and Property Information)
 
-• Manufacturing (Procedural Documents Outlining Manufacturing Methods)
-
-• General Documents (Project Meta Documents, Capstone Class Documents)
-
-• Research Documents (Literature Review Documents)
-
-• Resource Documents (How Tos and Readme documents for Git, Jupyter, etc.)
-
-• Safety (Documents Outlining Safety Procedures)
-
-• Tests (All Test Documentation)
-
-• Presentations (Documentation from Team Presentations)
-
-• Finances
-
-– Budget
-
-– Bill of Materials
-
-– Quotes
-
-– List of Suppliers and Industry Contacts
-
-– Grants and Awards
-
-• Misc. and Photos (Miscellaneous Content and Un-catagorized images)
-
-• Team Roles
-
-• Standards of Documentation
-
-• Master Meeting Notes
-
-• Contacts (Contact Info of Individuals Related to Project)
