@@ -1,0 +1,82 @@
+Courtesy of John & Ian for meeting with us:
+
+webplotdigitizer (google search)
+	-converts snap of stress/strain curve to data points to be able to reference (neat tool)
+	-set axis', create points, pull data as CSV
+
+swiftcomp (for delamination etc)
+
+	-set up excel doc to keep track of everything with different tabs (similar to John's formatting)
+
+	-for plasticity model, abaqus doesnt care about linear elastic region
+		-after webplotdigitizer, go to pt where yield is, compute new modulus(have cell @ yield point where you
+		(divide stress by strain) this is general yield str (ex Al ~ 79Gpa)
+		-true strain -(true stress/new modulus @ yield) if you do it right, it should end up being 0 @ yield point
+		-this is now plasticity model for abaqus
+		-can then change up the plot to represent this plastic model
+			-this is what abaqus cares about, especially the last point
+		-gz you just created a true plastic strain model
+
+Roadmap for modeling:
+	Model 1:
+	-Model solid Al tank
+		-linear elastic model (highest stress, forces, problem areas)
+		-plasticity model (check behavior, checking for equiv plastic strain (equiv von mises basically))
+			(checking to see where plastic strain is starting
+		-Failure analysis: here we start to lose ability to use symmetry in the model
+			(consider: non-linear materials?  Geometric non-linearity?(based on plasticity model), if this is present,
+			cannot use symmetry, must use whole model)
+		-If things are working out well so far, Static/dynamic explicit solution(wrt time) (impact, contact, ht xfer, fluids etc)
+			-Once here no more symmetry possible, must do full model
+	Model 2:
+		-Full model (real thing, w/ all materials etc)
+			-Run through same steps above, Plasticity model, temp model
+	
+In Abaqus (quick modeling ex)
+	-for ex w/ John
+		-3d (geometry type), deformable, shell
+			-Abaqus does not recognize cylindrical coords.  This needs to be added, and then setting checked in order
+				to relate the results to a cylindrical coord system (Z,R,theta)
+		-Create Datum CSYS: cylindrical 
+			-just put it right in the center(though it puts theta in the wrong direction)
+		-Massage method:  create datum points (one on each edge, so one is right in the middle)
+			-create datum offset from a point: Query->tools to find location of offset point on edge first, 
+				then can enter coords for Z.  This will create an offset point to be able to access the theta-R plane
+		-Select center data point to be origin, point on R plane, then offset for theta
+		-Do this in the assembly step as opposed to part geometry, as it is in the assembly step that analysis will happen 
+			(analysis will reference coords etc in the assembly step as opposed to global)
+		
+	-material properties:
+		-mechanical:elasticity, poissons (type isotropic)(for linear elastic)
+		-Mechanical:plasticity(going to have to research this to determine what type of analysis to use)
+				-Yield stress:plastic strain (from the excel sheet we generated earlier)
+		-Hardening drop down: start w/ isotropic
+
+	-create section:shell, homogenous
+		-thickness:(actual thickness)
+	-assign section
+		-shell offset: middle surface
+	-assembly,instance
+		-any additional datums or work from here to under assembly dropddown
+	-steps, intial (linear elastic step is initial):static general, general procedure type
+	-loads/bcs
+	-meshing:elem type(standard, linear, shell, start with reduced integration since it saves time)
+	-mesh controls:up to us (for now quad medial axis since its a cylinder)
+
+	-Run linear static job
+		
+	-for linear plastic: (STEPS MUST BE IN ORDER)
+			steps->new step(plastic)->procedure type:general->static,general->window pops up:
+			->Nlgeom:stick with off for now, but if we need it turn on.
+			->incrementation:increment size:(initial to maximum represents load) for # of increments(ex 100), w/
+				intial @ .01 max @0.5, .01 will be the increment (for convergence)  if it does not converge,
+				it will up the increment, to a maximum of .5 in order to reach convergence. (this still a little unclear)
+	-Foutput: timing:output at exact times:0.1(ex)
+
+	-plastic job: Pull up monitor when running jobs(GREAT TOOL so you can see what's going on(steps, increments etc...))
+		-Results:result options, transformation, transformation type, user specified, click the global cyl coords you saved
+			(this was to convert back to cyl coord system mentioned earlier)
+		-through step increments, should see no plastic deformation(0's) in linear steps/results
+		
+	
+	
