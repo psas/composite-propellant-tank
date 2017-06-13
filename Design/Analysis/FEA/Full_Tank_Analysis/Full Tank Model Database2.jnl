@@ -1989,3 +1989,551 @@ mdb.jobs['AlCfFS26ply45angle']._Message(JOB_COMPLETED, {
     'time': 'Wed May 24 11:58:52 2017', 'jobName': 'AlCfFS26ply45angle'})
 # Save by nab2 on 2017_05_24-11.59.41; build 2016.HF5 2016_07_06-08.50.19 127027
 # Save by nab2 on 2017_05_24-12.52.13; build 2016.HF5 2016_07_06-08.50.19 127027
+# Save by nab2 on 2017_05_24-14.08.35; build 2016.HF5 2016_07_06-08.50.19 127027
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['AlCFfs26ply'].submit(consistencyChecking=OFF)
+mdb.jobs['AlCfFS26ply45angle'].submit(consistencyChecking=OFF)
+mdb.jobs['AlCFfs26ply']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 0, 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 0, 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCfFS26ply45angle']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\AlCfFS26ply45angle.odb', 
+    'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCFfs26ply']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\AlCFfs26ply.odb', 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCFfs26ply']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCFfs26ply']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 7324, 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 7332, 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCFfs26ply']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCFfs26ply']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCFfs26ply']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'AlCFfs26ply', 'memory': 171.0})
+mdb.jobs['AlCfFS26ply45angle']._Message(MEMORY_ESTIMATE, {
+    'phase': STANDARD_PHASE, 'jobName': 'AlCfFS26ply45angle', 'memory': 171.0})
+mdb.jobs['AlCfFS26ply45angle']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCfFS26ply45angle']._Message(STATUS, {'totalTime': 1.0, 
+    'attempts': 1, 'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'AlCfFS26ply45angle', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['AlCFfs26ply']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCFfs26ply']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'AlCFfs26ply', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['AlCFfs26ply']._Message(END_STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(END_STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCFfs26ply']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlCFfs26ply']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:01:23 2017', 'jobName': 'AlCFfs26ply'})
+mdb.jobs['AlCfFS26ply45angle']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:01:23 2017', 'jobName': 'AlCfFS26ply45angle'})
+mdb.jobs['AlFS1043'].submit(consistencyChecking=OFF)
+mdb.jobs['AlFS1378'].submit(consistencyChecking=OFF)
+mdb.jobs['AlFS1043']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 0, 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1971'].submit(consistencyChecking=OFF)
+mdb.jobs['AlFS1378']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 0, 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1043']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': '1 elements are distorted. Either the isoparametric angles are out of the suggested limits or the triangular or tetrahedral quality measure is bad. The elements have been identified in element set WarnElemDistorted.', 
+    'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1043']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\AlFS1043.odb', 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1043']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS2907'].submit(consistencyChecking=OFF)
+mdb.jobs['AlFS1971']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 0, 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1378']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': '1 elements are distorted. Either the isoparametric angles are out of the suggested limits or the triangular or tetrahedral quality measure is bad. The elements have been identified in element set WarnElemDistorted.', 
+    'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1378']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\AlFS1378.odb', 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1378']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1043']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 10788, 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS2907']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 0, 'jobName': 'AlFS2907'})
+mdb.jobs['AlFS1043']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1043']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1043']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'AlFS1043', 'memory': 91.0})
+mdb.jobs['AlFS1971']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\AlFS1971.odb', 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1971']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1378']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 10956, 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1043']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1043']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'AlFS1043', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['AlFS1043']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1043']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1378']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1378']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1378']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'AlFS1378', 'memory': 116.0})
+mdb.jobs['AlFS1043']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:04:51 2017', 'jobName': 'AlFS1043'})
+mdb.jobs['AlFS1378']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1378']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'AlFS1378', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['AlFS1378']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1378']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS2907']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\AlFS2907.odb', 'jobName': 'AlFS2907'})
+mdb.jobs['AlFS2907']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS2907'})
+mdb.jobs['AlFS1971']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 11444, 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1971']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1971']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1971']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'AlFS1971', 'memory': 159.0})
+mdb.jobs['AlFS1378']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:04:54 2017', 'jobName': 'AlFS1378'})
+mdb.jobs['AlFS1971']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1971']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'AlFS1971', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['AlFS1971']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS1971'})
+mdb.jobs['AlFS1971']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS2907']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 11524, 'jobName': 'AlFS2907'})
+mdb.jobs['AlFS2907']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS2907'})
+mdb.jobs['AlFS2907']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'AlFS2907'})
+mdb.jobs['AlFS1971']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:04:57 2017', 'jobName': 'AlFS1971'})
+mdb.jobs['AlFS2907']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'AlFS2907', 'memory': 232.0})
+mdb.jobs['AlFS2907']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'AlFS2907'})
+mdb.jobs['AlFS2907']._Message(STATUS, {'totalTime': 1.0, 'attempts': 1, 
+    'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'AlFS2907', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['AlFS2907']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'AlFS2907'})
+mdb.jobs['AlFS2907']._Message(COMPLETED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'AlFS2907'})
+mdb.jobs['AlFS2907']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:05:02 2017', 'jobName': 'AlFS2907'})
+mdb.Model(name='FullTankAlCfFS26ply-Copy2', objectToCopy=
+    mdb.models['FullTankAlCfFS26ply'])
+mdb.models['FullTankAlCfFS26ply-Copy2'].parts['Part-2'].generateMesh()
+mdb.models['FullTankAlCfFS26ply-Copy2'].parts['Part-2'].deleteMesh()
+mdb.models['FullTankAlCfFS26ply-Copy2'].parts['Part-2'].seedPart(
+    deviationFactor=0.1, minSizeFactor=0.1, size=0.004)
+mdb.models['FullTankAlCfFS26ply-Copy2'].parts['Part-2'].generateMesh()
+mdb.models.changeKey(fromName='FullTankAlCfFS26ply-Copy2', toName=
+    'FullTankAlCfFS26ply2907')
+mdb.models['FullTankAlCfFS26ply2907'].rootAssembly.regenerate()
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='FullTankAlCfFS26ply2907', 
+    modelPrint=OFF, multiprocessingMode=DEFAULT, name='FullTankAlCfFS26ply2907'
+    , nodalOutputPrecision=SINGLE, numCpus=1, numGPUs=0, queue=None, 
+    resultsFormat=ODB, scratch='', type=ANALYSIS, userSubroutine='', waitHours=
+    0, waitMinutes=0)
+mdb.jobs['FullTankAlCfFS26ply2907'].submit(consistencyChecking=OFF)
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 0, 'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(ODB_FILE, {
+    'phase': BATCHPRE_PHASE, 'file': 'C:\\temp\\FullTankAlCfFS26ply2907.odb', 
+    'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(COMPLETED, {
+    'phase': BATCHPRE_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'MCAE17', 'handle': 1272, 
+    'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 0, 
+    'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(MEMORY_ESTIMATE, {
+    'phase': STANDARD_PHASE, 'jobName': 'FullTankAlCfFS26ply2907', 
+    'memory': 247.0})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 1, 
+    'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(STATUS, {'totalTime': 1.0, 
+    'attempts': 1, 'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'FullTankAlCfFS26ply2907', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(END_STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(COMPLETED, {
+    'phase': STANDARD_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.jobs['FullTankAlCfFS26ply2907']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:09:21 2017', 'jobName': 'FullTankAlCfFS26ply2907'})
+mdb.Model(name='FullTankAlCfFS26ply29071200kpa', objectToCopy=
+    mdb.models['FullTankAlCfFS26ply2907'])
+mdb.models['FullTankAlCfFS26ply29071200kpa'].loads['Load-1'].setValues(
+    magnitude=1200000.0)
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model='FullTankAlCfFS26ply29071200kpa', 
+    modelPrint=OFF, multiprocessingMode=DEFAULT, name=
+    'FullTankAlCfFS26ply29071200kpa', nodalOutputPrecision=SINGLE, numCpus=1, 
+    numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=ANALYSIS, 
+    userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['FullTankAlCfFS26ply29071200kpa'].submit(consistencyChecking=OFF)
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(STARTED, {
+    'phase': BATCHPRE_PHASE, 'clientHost': 'MCAE17', 'handle': 0, 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(ODB_FILE, {
+    'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\FullTankAlCfFS26ply29071200kpa.odb', 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(COMPLETED, {
+    'phase': BATCHPRE_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(STARTED, {
+    'phase': STANDARD_PHASE, 'clientHost': 'MCAE17', 'handle': 11552, 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 0, 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(MEMORY_ESTIMATE, {
+    'phase': STANDARD_PHASE, 'jobName': 'FullTankAlCfFS26ply29071200kpa', 
+    'memory': 247.0})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 1, 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(STATUS, {'totalTime': 1.0, 
+    'attempts': 1, 'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'FullTankAlCfFS26ply29071200kpa', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(END_STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(COMPLETED, {
+    'phase': STANDARD_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.jobs['FullTankAlCfFS26ply29071200kpa']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:13:21 2017', 
+    'jobName': 'FullTankAlCfFS26ply29071200kpa'})
+mdb.Model(name='FullTankAlCfFS26ply29071200kpa9000N', objectToCopy=
+    mdb.models['FullTankAlCfFS26ply29071200kpa'])
+mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.Surface(name=
+    'Surf-3', side2Edges=
+    mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.instances['Part-2-1'].edges.getSequenceFromMask(
+    ('[#2 ]', ), ))
+mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].ShellEdgeLoad(createStepName=
+    'Static General Linear Elastic', distributionType=UNIFORM, field='', 
+    localCsys=None, magnitude=9000.0, name='CompLoad', region=
+    mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.surfaces['Surf-3'])
+#* Region must contain only free shell edges.
+mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.Surface(name=
+    'Surf-4', side1Faces=
+    mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.instances['Part-2-1'].faces.getSequenceFromMask(
+    ('[#1 ]', ), ))
+mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].Pressure(amplitude=UNSET, 
+    createStepName='Static General Linear Elastic', distributionType=UNIFORM, 
+    field='', magnitude=9000.0, name='Comp Load', region=
+    mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.surfaces['Surf-4'])
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model=
+    'FullTankAlCfFS26ply29071200kpa9000N', modelPrint=OFF, multiprocessingMode=
+    DEFAULT, name='FullTankAlCf1200kpa9000Ncomp', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp'].submit(consistencyChecking=OFF)
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STARTED, {
+    'phase': BATCHPRE_PHASE, 'clientHost': 'MCAE17', 'handle': 0, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FILE, {
+    'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\FullTankAlCf1200kpa9000Ncomp.odb', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(COMPLETED, {
+    'phase': BATCHPRE_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STARTED, {
+    'phase': STANDARD_PHASE, 'clientHost': 'MCAE17', 'handle': 12072, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 0, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(MEMORY_ESTIMATE, {
+    'phase': STANDARD_PHASE, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 
+    'memory': 247.0})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 1, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STATUS, {'totalTime': 1.0, 
+    'attempts': 1, 'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(END_STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(COMPLETED, {
+    'phase': STANDARD_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:21:16 2017', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].boundaryConditions['BC-1'].setValues(
+    u2=UNSET)
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp'].submit(consistencyChecking=OFF)
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STARTED, {
+    'phase': BATCHPRE_PHASE, 'clientHost': 'MCAE17', 'handle': 0, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FILE, {
+    'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\FullTankAlCf1200kpa9000Ncomp.odb', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(COMPLETED, {
+    'phase': BATCHPRE_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STARTED, {
+    'phase': STANDARD_PHASE, 'clientHost': 'MCAE17', 'handle': 7124, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 0, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(MEMORY_ESTIMATE, {
+    'phase': STANDARD_PHASE, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 
+    'memory': 247.0})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STATUS, {'totalTime': 0.0, 
+    'attempts': ' 1U', 'timeIncrement': 1.0, 'increment': 1, 'stepTime': 0.0, 
+    'step': 1, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 'severe': 0, 
+    'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STATUS, {'totalTime': 0.0, 
+    'attempts': ' 2U', 'timeIncrement': 0.25, 'increment': 1, 'stepTime': 0.0, 
+    'step': 1, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 'severe': 0, 
+    'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STATUS, {'totalTime': 0.0, 
+    'attempts': ' 3U', 'timeIncrement': 0.0625, 'increment': 1, 
+    'stepTime': 0.0, 'step': 1, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 
+    'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STATUS, {'totalTime': 0.0, 
+    'attempts': ' 4U', 'timeIncrement': 0.015625, 'increment': 1, 
+    'stepTime': 0.0, 'step': 1, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 
+    'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STATUS, {'totalTime': 0.0, 
+    'attempts': ' 5U', 'timeIncrement': 0.00390625, 'increment': 1, 
+    'stepTime': 0.0, 'step': 1, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 
+    'severe': 0, 'iterations': 4, 'phase': STANDARD_PHASE, 'equilibrium': 4})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ERROR, {
+    'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ABORTED, {
+    'phase': STANDARD_PHASE, 'message': 'Analysis phase failed due to errors', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.Set(edges=
+    mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.instances['Part-2-1'].edges.getSequenceFromMask(
+    ('[#10 ]', ), ), name='Set-3')
+mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].DisplacementBC(amplitude=
+    UNSET, createStepName='Static General Linear Elastic', distributionType=
+    UNIFORM, fieldName='', fixed=OFF, localCsys=None, name='BC-2', region=
+    mdb.models['FullTankAlCfFS26ply29071200kpa9000N'].rootAssembly.sets['Set-3']
+    , u1=UNSET, u2=0.0, u3=UNSET, ur1=UNSET, ur2=UNSET, ur3=UNSET)
+# Save by nab2 on 2017_05_26-14.25.20; build 2016.HF5 2016_07_06-08.50.19 127027
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp'].submit(consistencyChecking=OFF)
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STARTED, {
+    'phase': BATCHPRE_PHASE, 'clientHost': 'MCAE17', 'handle': 0, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FILE, {
+    'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\FullTankAlCf1200kpa9000Ncomp.odb', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(COMPLETED, {
+    'phase': BATCHPRE_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STARTED, {
+    'phase': STANDARD_PHASE, 'clientHost': 'MCAE17', 'handle': 7164, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 0, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(MEMORY_ESTIMATE, {
+    'phase': STANDARD_PHASE, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 
+    'memory': 247.0})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 1, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(STATUS, {'totalTime': 1.0, 
+    'attempts': 1, 'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'FullTankAlCf1200kpa9000Ncomp', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(END_STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(COMPLETED, {
+    'phase': STANDARD_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+mdb.jobs['FullTankAlCf1200kpa9000Ncomp']._Message(JOB_COMPLETED, {
+    'time': 'Fri May 26 14:25:42 2017', 
+    'jobName': 'FullTankAlCf1200kpa9000Ncomp'})
+# Save by nab2 on 2017_05_26-14.27.37; build 2016.HF5 2016_07_06-08.50.19 127027
+# Save by nab2 on 2017_05_26-14.42.28; build 2016.HF5 2016_07_06-08.50.19 127027
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Model(name='FullTankAlCfFS22ply29071200kpa9000N', objectToCopy=
+    mdb.models['FullTankAlCfFS26ply29071200kpa9000N'])
+mdb.models['FullTankAlCfFS22ply29071200kpa9000N'].parts['Part-2'].compositeLayups['CompositeLayup-1'].orientation.setValues(
+    additionalRotationType=ROTATION_NONE, angle=0.0)
+mdb.models['FullTankAlCfFS22ply29071200kpa9000N'].parts['Part-2'].compositeLayups['CompositeLayup-1'].deletePlies(
+    )
+mdb.models['FullTankAlCfFS22ply29071200kpa9000N'].parts['Part-2'].compositeLayups['CompositeLayup-1'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=0.0, plyName='Ply-1', region=Region(
+    faces=mdb.models['FullTankAlCfFS22ply29071200kpa9000N'].parts['Part-2'].faces.getSequenceFromMask(
+    mask=('[#2 ]', ), )), suppressed=False, thickness=0.00254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['FullTankAlCfFS22ply29071200kpa9000N'].parts['Part-2'].compositeLayups['CompositeLayup-1'].CompositePly(
+    additionalRotationField='', additionalRotationType=ROTATION_NONE, angle=0.0
+    , axis=AXIS_3, material='CF', numIntPoints=3, orientationType=
+    SPECIFY_ORIENT, orientationValue=90.0, plyName='Ply-2', region=Region(
+    faces=mdb.models['FullTankAlCfFS22ply29071200kpa9000N'].parts['Part-2'].faces.getSequenceFromMask(
+    mask=('[#2 ]', ), )), suppressed=False, thickness=0.00254, thicknessType=
+    SPECIFY_THICKNESS)
+mdb.models['FullTankAlCfFS22ply29071200kpa9000N'].rootAssembly.regenerate()
+mdb.Job(atTime=None, contactPrint=OFF, description='', echoPrint=OFF, 
+    explicitPrecision=SINGLE, getMemoryFromAnalysis=True, historyPrint=OFF, 
+    memory=90, memoryUnits=PERCENTAGE, model=
+    'FullTankAlCfFS22ply29071200kpa9000N', modelPrint=OFF, multiprocessingMode=
+    DEFAULT, name='FullTankAlCfFS22ply2907', nodalOutputPrecision=SINGLE, 
+    numCpus=1, numGPUs=0, queue=None, resultsFormat=ODB, scratch='', type=
+    ANALYSIS, userSubroutine='', waitHours=0, waitMinutes=0)
+mdb.jobs['FullTankAlCfFS22ply2907'].submit(consistencyChecking=OFF)
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'mcae18', 'handle': 0, 'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(ODB_FILE, {
+    'phase': BATCHPRE_PHASE, 'file': 'C:\\temp\\FullTankAlCfFS22ply2907.odb', 
+    'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(COMPLETED, {
+    'phase': BATCHPRE_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'mcae18', 'handle': 11608, 
+    'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 0, 
+    'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(MEMORY_ESTIMATE, {
+    'phase': STANDARD_PHASE, 'jobName': 'FullTankAlCfFS22ply2907', 
+    'memory': 233.0})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(ODB_FRAME, {
+    'phase': STANDARD_PHASE, 'step': 0, 'frame': 1, 
+    'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(STATUS, {'totalTime': 1.0, 
+    'attempts': 1, 'timeIncrement': 1.0, 'increment': 1, 'stepTime': 1.0, 
+    'step': 1, 'jobName': 'FullTankAlCfFS22ply2907', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(END_STEP, {
+    'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(COMPLETED, {
+    'phase': STANDARD_PHASE, 'message': 'Analysis phase complete', 
+    'jobName': 'FullTankAlCfFS22ply2907'})
+mdb.jobs['FullTankAlCfFS22ply2907']._Message(JOB_COMPLETED, {
+    'time': 'Wed May 31 16:45:31 2017', 'jobName': 'FullTankAlCfFS22ply2907'})
+# Save by nab2 on 2017_05_31-16.46.07; build 2016.HF5 2016_07_06-08.50.19 127027

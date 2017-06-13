@@ -609,3 +609,95 @@ from visualization import *
 from connectorBehavior import *
 mdb.models['Model-1'].parts['Full Tank Al Model'].regenerate()
 # Save by nab2 on 2017_04_20-15.24.24; build 2016.HF5 2016_07_06-08.50.19 127027
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Model(name='Model-1-Copy', objectToCopy=mdb.models['Model-1'])
+mdb.models['Model-1-Copy'].ConstrainedSketch(name='__edit__', objectToCopy=
+    mdb.models['Model-1-Copy'].parts['Full Tank Al Model'].features['Shell planar-1'].sketch)
+mdb.models['Model-1-Copy'].parts['Full Tank Al Model'].projectReferencesOntoSketch(
+    filter=COPLANAR_EDGES, sketch=
+    mdb.models['Model-1-Copy'].sketches['__edit__'], upToFeature=
+    mdb.models['Model-1-Copy'].parts['Full Tank Al Model'].features['Shell planar-1'])
+del mdb.models['Model-1-Copy'].sketches['__edit__']
+mdb.models['Model-1-Copy'].ConstrainedSketch(name='__profile__', sheetSize=0.5)
+mdb.models['Model-1-Copy'].sketches['__profile__'].ConstructionLine(point1=(
+    0.0, -0.25), point2=(0.0, 0.25))
+mdb.models['Model-1-Copy'].sketches['__profile__'].FixedConstraint(entity=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[2])
+mdb.models['Model-1-Copy'].sketches['__profile__'].Line(point1=(0.01, 0.02), 
+    point2=(0.03, 0.02))
+mdb.models['Model-1-Copy'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[3])
+mdb.models['Model-1-Copy'].sketches['__profile__'].Line(point1=(0.03, 0.02), 
+    point2=(0.03, -0.02))
+mdb.models['Model-1-Copy'].sketches['__profile__'].VerticalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1-Copy'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[3], entity2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[4])
+mdb.models['Model-1-Copy'].sketches['__profile__'].Line(point1=(0.03, -0.02), 
+    point2=(0.01, -0.02))
+mdb.models['Model-1-Copy'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1-Copy'].sketches['__profile__'].PerpendicularConstraint(
+    addUndoState=False, entity1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[4], entity2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[5])
+mdb.models['Model-1-Copy'].sketches['__profile__'].DistanceDimension(entity1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[2], entity2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].vertices[0], textPoint=(
+    0.00662323832511902, 0.040196068584919), value=0.003175)
+mdb.models['Model-1-Copy'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    0.0161901265382767, 0.0500000044703484), value=0.034925, vertex1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].vertices[0], vertex2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].vertices[1])
+mdb.models['Model-1-Copy'].sketches['__profile__'].DistanceDimension(entity1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].vertices[3], entity2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[2], textPoint=(
+    0.00956688821315765, -0.0448529422283173), value=0.003175)
+mdb.models['Model-1-Copy'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    0.079724133014679, -0.0053921565413475), value=0.133, vertex1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].vertices[1], vertex2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].vertices[2])
+mdb.models['Model-1-Copy'].sketches['__profile__'].ConstructionLine(point1=(
+    0.0, 0.0), point2=(0.117499999967404, 0.0))
+mdb.models['Model-1-Copy'].sketches['__profile__'].HorizontalConstraint(
+    addUndoState=False, entity=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1-Copy'].sketches['__profile__'].DistanceDimension(entity1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[3], entity2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[6], textPoint=(
+    -0.0610900819301605, 0.00241372734308243), value=0.0665)
+mdb.models['Model-1-Copy'].sketches['__profile__'].undo()
+mdb.models['Model-1-Copy'].sketches['__profile__'].FixedConstraint(entity=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[6])
+mdb.models['Model-1-Copy'].sketches['__profile__'].DistanceDimension(entity1=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[3], entity2=
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[6], textPoint=(
+    -0.0804611891508102, 0.00393174588680267), value=0.0665)
+mdb.models['Model-1-Copy'].sketches['__profile__'].delete(objectList=(
+    mdb.models['Model-1-Copy'].sketches['__profile__'].constraints[15], ))
+mdb.models['Model-1-Copy'].sketches['__profile__'].delete(objectList=(
+    mdb.models['Model-1-Copy'].sketches['__profile__'].geometry[6], ))
+mdb.models['Model-1-Copy'].Part(dimensionality=THREE_D, name='Part-2', type=
+    DEFORMABLE_BODY)
+mdb.models['Model-1-Copy'].parts['Part-2'].BaseShellRevolve(angle=360.0, 
+    flipRevolveDirection=OFF, sketch=
+    mdb.models['Model-1-Copy'].sketches['__profile__'])
+del mdb.models['Model-1-Copy'].sketches['__profile__']
+# Save by nab2 on 2017_05_08-15.52.31; build 2016.HF5 2016_07_06-08.50.19 127027
