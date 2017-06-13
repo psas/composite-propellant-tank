@@ -13,3 +13,56 @@ Prototyping lightweight composite LOX and IPA tanks for LV4.
 - Difficult to incorperate cutouts
 - Significant problems with CTE mismatch when used in conjunction with metallic structures
 
+
+## Summary of Project and Design Artifacts
+• Analysis
+
+– Calculations (Hand Calculations and Python Scripts)
+
+– Finite Element Analysis (Code, Results, and Documentation)
+
+• CAD
+
+– Archived Designs
+
+– Current Designs
+
+• Design Ideas (Notes and Concept Drawings)
+
+• Materials (Material Data Sheets and Property Information)
+
+• Manufacturing (Procedural Documents Outlining Manufacturing Methods)
+
+• General Documents (Project Meta Documents, Capstone Class Documents)
+
+• Research Documents (Literature Review Documents)
+
+• Resource Documents (How Tos and Readme documents for Git, Jupyter, etc.)
+
+• Safety (Documents Outlining Safety Procedures)
+
+• Tests (All Test Documentation)
+
+• Presentations (Documentation from Team Presentations)
+
+• Finances
+
+– Budget
+
+– Bill of Materials
+
+– Quotes
+
+– List of Suppliers and Industry Contacts
+
+– Grants and Awards
+
+• Misc. and Photos (Miscellaneous Content and Un-catagorized images)
+
+• Team Roles
+
+• Standards of Documentation
+
+• Master Meeting Notes
+
+• Contacts (Contact Info of Individuals Related to Project)
