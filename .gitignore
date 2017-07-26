@@ -1,0 +1,2 @@
+# ignore everything in the notebook checkpoints folder
+.ipynb_checkpoints/*
