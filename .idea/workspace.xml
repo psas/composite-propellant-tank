@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="183ad1d4-ccaf-4100-95c7-8f69e09d0120" name="Default" comment="" />
+    <list default="true" id="183ad1d4-ccaf-4100-95c7-8f69e09d0120" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb" afterPath="$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb" afterPath="$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,26 +17,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LOX_BoilOff_HeatTransferAnalysis.ipynb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,8 +40,8 @@
       <list>
         <option value="$PROJECT_DIR$/Test_Notebook.ipynb" />
         <option value="$PROJECT_DIR$/Analysis/Calculations/HT Scratch Code.py" />
-        <option value="$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb" />
         <option value="$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb" />
+        <option value="$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb" />
       </list>
     </option>
   </component>
@@ -68,10 +52,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="826" />
-    <option name="y" value="14" />
-    <option name="width" value="779" />
-    <option name="height" value="860" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -479,7 +463,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="826" y="14" width="779" height="860" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.257329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -539,13 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -553,13 +530,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="-1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb" />
     <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -567,13 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb" />
     <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -581,35 +553,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
+    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="-1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
-    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LayerRep.png">
+    <entry file="file://$PROJECT_DIR$/Test_Notebook.ipynb" />
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LayerRep.PNG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Analysis/Calculations/HT Scratch Code.py" />
-    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/2017-04-27_PressureVessel_Traditional_Thermal_Strain.ipynb">
+    <entry file="file://$PROJECT_DIR$/Analysis/Calculations/LOX_BoilOff_HeatTransferAnalysis.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="1" />
